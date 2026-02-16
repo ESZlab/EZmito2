@@ -1,0 +1,379 @@
+# EZmito 🧬
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Bioinformatics](https://img.shields.io/badge/field-Bioinformatics-purple.svg)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+
+**A comprehensive toolkit for mitochondrial genome analysis**
+
+[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Web Server](#web-server) • [Citation](#citation)
+
+</div>
+
+---
+
+## 🌟 Overview
+
+**EZmito** is a simple and fast command-line tool designed for comprehensive mitochondrial genome analyses. It provides a suite of utilities for processing, analyzing, and visualizing mitochondrial DNA sequences with a focus on ease of use and efficiency.
+
+> 💻 **Web Server Available!** A parallel web-based version is available at [ezmito.unisi.it](http://ezmito.unisi.it)
+
+---
+
+## ✨ Features
+
+EZmito includes seven powerful subcommands for different mitochondrial genome analyses:
+
+### 🔄 **EZcircular**
+Circularize mitochondrial sequences starting from a specific gene
+- Supports both circular and linear genomes
+- Customizable starting gene position
+- Handles BED annotation files
+
+### 🧪 **EZcodon**
+Analyze codon usage patterns in heavy (J) and light (N) strands
+- Calculate RSCU (Relative Synonymous Codon Usage)
+- Amino acid frequency analysis
+- Beautiful visualization plots
+- Support for multiple genetic codes
+
+### 🗺️ **EZmap**
+Create custom circular or linear maps of mitochondrial genomes
+- Circular and linear plot generation
+- Customizable color schemes
+- GFF3 annotation support
+- Publication-ready figures
+
+### 🔍 **EZmix**
+Detect potential chimeras in mitochondrial assemblies
+- BLAST-based similarity detection
+- Adjustable identity and length thresholds
+- Visual representation of homologous regions
+
+### 🧬 **EZpipe**
+Prepare mitochondrial sequences for phylogenetic analysis
+- Automated alignment with MAFFT
+- Gblocks trimming
+- Codon position filtering (2nd/3rd position removal)
+- PartitionFinder configuration generation
+- NEXUS and PHYLIP output formats
+
+### 📊 **EZskew**
+Analyze nucleotide skew biases in mitochondrial strands
+- AT, CG, AC, and GT skew calculations
+- Position-specific analysis (1st, 2nd, 3rd codon positions)
+- Comprehensive visualization
+- Support for multiple genetic codes
+
+### ✂️ **EZsplit**
+Extract individual protein-coding genes from complete mitogenomes
+- Batch processing of multiple genomes
+- GFF3-based gene extraction
+- Automatic gene name standardization
+- Missing gene detection
+
+---
+
+## 📋 Requirements
+
+### System Requirements
+- Linux/Unix-based operating system
+- Conda (Miniconda or Anaconda)
+- 4GB RAM minimum
+- 2GB disk space
+
+### Software Dependencies
+All dependencies are automatically installed via the provided conda environment:
+- Python 3.7+
+- Biopython
+- pandas
+- matplotlib
+- numpy
+- pyfiglet
+- pycirclize
+- BCBio
+- itaxotools.pygblocks
+- MAFFT (for EZpipe)
+- BLAST+ (for EZmix)
+
+---
+
+## 🚀 Installation
+
+### Quick Install (Recommended)
+
+EZmito provides an automated installation script that sets up everything for you:
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/ezmito.git
+cd ezmito
+
+# Run the installer
+bash install.sh
+```
+
+The installer will:
+1. ✅ Check if Conda is installed (and offer to install it if missing)
+2. ✅ Create the `ezmito` conda environment
+3. ✅ Install all required dependencies
+4. ✅ Set up executable permissions
+
+### Manual Installation
+
+If you prefer to install manually:
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/ezmito.git
+cd ezmito
+
+# Make files executable
+chmod 775 ezmito.yml
+chmod 775 ezmito-cli
+
+# Create conda environment
+conda env create -f ezmito.yml
+
+# Activate the environment
+conda activate ezmito
+```
+
+### Verify Installation
+
+After installation, verify everything is working:
+```bash
+# Activate the environment
+conda activate ezmito
+
+# Check EZmito version and help
+python ezmito.py --help
+```
+
+---
+
+## 💻 Usage
+
+### Activating the Environment
+
+Before running EZmito, always activate the conda environment:
+```bash
+conda activate ezmito
+```
+
+### General Syntax
+```bash
+python ezmito.py <command> [options]
+```
+
+Or if using the CLI wrapper:
+```bash
+./ezmito-cli <command> [options]
+```
+
+### Available Commands
+
+#### 🔄 EZcircular
+```bash
+python ezmito.py ezcircular -i input.fasta -b input.bed -s cox1 -f circular -o output_dir
+```
+
+**Options:**
+- `-i, --input`: Input FASTA file (required)
+- `-b, --bed`: Input BED file (required)
+- `-s, --start`: Starting gene (default: cox1)
+- `-f, --feature`: Genome feature - circular or linear (default: circular)
+- `-o, --outdir`: Output directory (default: outdir)
+
+---
+
+#### 🧪 EZcodon
+```bash
+python ezmito.py ezcodon -J heavy_genes/ -N light_genes/ -c 2 -o output_dir
+```
+
+**Options:**
+- `-J, --heavy`: Path to heavy chain FASTA files
+- `-N, --light`: Path to light chain FASTA files
+- `-c, --code`: Genetic code (required)
+- `-o, --outdir`: Output directory (default: outdir)
+
+**Supported Genetic Codes:**
+- `2` - Vertebrate Mitochondrial Code
+- `4` - Mold, Protozoan, and Coelenterate Mitochondrial Code
+- `5` - Invertebrate Mitochondrial Code
+- `9` - Echinoderm and Flatworm Mitochondrial Code
+- `13` - Ascidian Mitochondrial Code
+- `14` - Alternative Flatworm Mitochondrial Code
+- `21` - Trematode Mitochondrial Code
+- `33` - Cephalodiscidae Mitochondrial UAA-Tyr Code
+
+---
+
+#### 🗺️ EZmap
+```bash
+python ezmito.py ezmap -g input.gff -f circular -colJ '#add8e6' -colN '#B22222' -o output_dir
+```
+
+**Options:**
+- `-g, --gff`: Input GFF3 file (required)
+- `-f, --feature`: Genome feature - circular or linear (default: circular)
+- `-colJ, --colorJ`: Heavy strand color (default: #add8e6)
+- `-colN, --colorN`: Light strand color (default: #B22222)
+- `-o, --outdir`: Output directory (default: outdir)
+
+---
+
+#### 🔍 EZmix
+```bash
+python ezmito.py ezmix -i sequences.fasta -id 0.95 -len 200 -o output_dir
+```
+
+**Options:**
+- `-i, --input`: MultiFASTA input file (required)
+- `-id, --identity`: Identity threshold 0.5-1 (default: 0.95)
+- `-len, --length`: Length threshold in bp (default: 200)
+- `-bn, --blastn`: Path to blastn executable (default: uses conda installation)
+- `-o, --outdir`: Output directory (default: outdir)
+
+---
+
+#### 🧬 EZpipe
+```bash
+python ezmito.py ezpipe -i genes/ -c 5 -p 3 -o output_dir
+```
+
+**Options:**
+- `-i, --input`: Path to FASTA files (required)
+- `-c, --code`: Genetic code (required)
+- `-p, --positions`: Number of codon positions - 2 or 3 (default: 3)
+- `-o, --outdir`: Output directory (default: outdir)
+
+---
+
+#### 📊 EZskew
+```bash
+python ezmito.py ezskew -J heavy_genes/ -N light_genes/ -c 2 -o output_dir
+```
+
+**Options:**
+- `-J, --heavy`: Path to heavy chain FASTA files
+- `-N, --light`: Path to light chain FASTA files
+- `-c, --code`: Genetic code (required)
+- `-o, --outdir`: Output directory (default: outdir)
+
+---
+
+#### ✂️ EZsplit
+```bash
+python ezmito.py ezsplit -i mitogenomes.fasta -g annotations.gff -o output_dir
+```
+
+**Options:**
+- `-i, --input`: MultiFASTA input file of complete mitogenomes (required)
+- `-g, --gff`: GFF3 input file (required)
+- `-o, --outdir`: Output directory (default: outdir)
+
+---
+
+## 🌐 Web Server
+
+Don't want to use the command line? Try our **user-friendly web interface** at:
+
+### [🔗 ezmito.unisi.it](http://ezmito.unisi.it)
+
+The web server provides:
+- ✅ No installation required
+- ✅ Intuitive graphical interface
+- ✅ Example datasets
+- ✅ Direct download of results
+- ✅ Job management system
+
+---
+
+## 📊 Output Files
+
+Each tool generates specific outputs:
+
+- **EZcircular**: Rearranged FASTA and BED files
+- **EZcodon**: RSCU tables, amino acid frequency plots, codon usage plots
+- **EZmap**: Publication-ready circular or linear genome maps (PDF)
+- **EZmix**: Similarity plots showing potential chimeric regions (PDF)
+- **EZpipe**: Aligned sequences, partitioned datasets, PartitionFinder config
+- **EZskew**: Skew analysis tables and plots (CSV, PDF)
+- **EZsplit**: Individual gene FASTA files, missing genes report
+
+---
+
+## 🛠️ Troubleshooting
+
+### Common Issues
+
+**Issue: "Conda not found"**
+```bash
+# The installer will offer to install Conda automatically
+# Or install manually from: https://docs.conda.io/en/latest/miniconda.html
+```
+
+**Issue: "Environment already exists"**
+```bash
+# Remove the existing environment
+conda env remove -n ezmito
+
+# Reinstall
+conda env create -f ezmito.yml
+```
+
+**Issue: "Permission denied"**
+```bash
+# Make sure files are executable
+chmod 775 install.sh
+chmod 775 ezmito-cli
+```
+
+---
+
+## 📖 Citation
+
+If EZmito helps your research, please cite:
+
+> **Cucini C., Leo C., Iannotti N., Boschi S., Brunetti C., Pons J., Fanciulli P. P., Frati F., Carapelli A., & Nardi F. (2021)**  
+> *EZmito: a simple and fast tool for multiple mitogenome analyses*  
+> Mitochondrial DNA Part B, 6(3), 1101-1109.  
+> DOI: [10.1080/23802359.2021.1899865](https://doi.org/10.1080/23802359.2021.1899865)
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 👥 Authors
+
+- Cucini C., Leo C., Iannotti N., Boschi S., Brunetti C., Pons J., Fanciulli P. P., Frati F., Carapelli A., & Nardi F.
+
+---
+
+## 🐛 Issues & Support
+
+Found a bug or need help? Please open an issue on our [GitHub Issues page](https://github.com/yourusername/ezmito/issues).
+
+---
+
+## 📚 Documentation
+
+For more detailed documentation, tutorials, and examples, visit:
+- 📖 [Full Documentation](#) (coming soon)
+- 🎓 [Tutorial Videos](#) (coming soon)
+- 💬 [Community Forum](#) (coming soon)
+
+---
+
+<div align="center">
+
+⭐ Star us on GitHub if you find EZmito useful!
+
+</div>
