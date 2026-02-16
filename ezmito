@@ -898,7 +898,7 @@ def ez_mix_subcommand(args):
 	
 	def run_blast(query, subject, outdir):
 			output_file = os.path.join(outdir, "blout")
-			command = f"{blastn} -query {query} -subject {subject} -outfmt '6 qseqid qstart qend sseqid sstart send pident length evalue bitscore slen qlen' -evalue 0.5 > {output_file}"
+			command = f"{blastn} -task blastn -query {query} -subject {subject} -outfmt '6 qseqid qstart qend sseqid sstart send pident length evalue bitscore slen qlen' -evalue 0.5 > {output_file}"
 			subprocess.run(command, shell=True)
 			return output_file if os.path.exists(output_file) and os.path.getsize(output_file) > 0 else None
 
@@ -1905,4 +1905,3 @@ if __name__ == "__main__":
 	print("Cucini C., Leo C., Iannotti N., Boschi S., Brunetti C., Pons J., Fanciulli P. P., Frati F., Carapelli A., & Nardi F. (2021)")
 	print("EZmito: a simple and fast tool for multiple mitogenome analyses, Mitochondrial DNA Part B, 6(3), 1101-1109.")
 	print("Doi: 10.1080/23802359.2021.1899865")
-
