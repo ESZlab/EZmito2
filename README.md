@@ -1,4 +1,4 @@
-# EZmito 🧬
+# EZmito2 🧬
 
 <div align="center">
 
