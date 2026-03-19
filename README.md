@@ -9,7 +9,7 @@
 
 **A comprehensive toolkit for mitochondrial genome analysis**
 
-[Features](#features) • [Installation](#Installation) • [Usage](#usage) • [Web Server](#web-server) • [Citation](#citation)
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Web Server](#-web-server) • [Citation](#-citation)
 
 </div>
 
