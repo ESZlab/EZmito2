@@ -387,7 +387,7 @@ chmod 775 ezmito.py
 
 ## 📖 Citation
 
-If EZmito2 helps your research, while eaiting for the new manuscript publication, please cite:
+If EZmito2 helps your research, while waiting for the new manuscript publication, please cite:
 
 > **Cucini C., Leo C., Iannotti N., Boschi S., Brunetti C., Pons J., Fanciulli P. P., Frati F., Carapelli A., & Nardi F. (2021)**  
 > *EZmito: a simple and fast tool for multiple mitogenome analyses*  
