@@ -25,7 +25,7 @@
 
 ## ✨ Features
 
-EZmito includes seven powerful subcommands for different mitochondrial genome analyses:
+EZmito2 includes seven powerful subcommands for different mitochondrial genome analyses:
 
 ### 🔄 **EZcircular**
 Circularize mitochondrial sequences starting from a specific gene
@@ -113,7 +113,7 @@ All dependencies are automatically installed via the provided conda environment 
 
 ### Quick Install (Recommended)
 
-EZmito provides an automated installation script that sets up everything for you:
+EZmito2 provides an automated installation script that sets up everything for you:
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/ezmito.git
@@ -139,7 +139,7 @@ cd ezmito
 
 # Make files executable
 chmod 775 ezmito.yml
-chmod 775 ezmito-cli
+chmod 775 ezmito.py
 
 # Create conda environment
 conda env create -f ezmito_env.yml
@@ -165,7 +165,7 @@ python ezmito.py --help
 
 ### Activating the Environment
 
-Before running EZmito, always activate the conda environment:
+Before running EZmito2, always activate the conda environment:
 ```bash
 conda activate ezmito_env
 ```
@@ -387,7 +387,7 @@ chmod 775 ezmito.py
 
 ## 📖 Citation
 
-If EZmito helps your research, please cite:
+If EZmito2 helps your research, while eaiting for the new manuscript publication, please cite:
 
 > **Cucini C., Leo C., Iannotti N., Boschi S., Brunetti C., Pons J., Fanciulli P. P., Frati F., Carapelli A., & Nardi F. (2021)**  
 > *EZmito: a simple and fast tool for multiple mitogenome analyses*  
