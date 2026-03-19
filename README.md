@@ -17,7 +17,7 @@
 
 ## 🌟 Overview
 
-**EZmito** is a simple and fast command-line tool designed for comprehensive mitochondrial genome analyses. It provides a suite of utilities for processing, analyzing, and visualizing mitochondrial DNA sequences with a focus on ease of use and efficiency.
+**EZmito2** is a simple and fast command-line tool designed for comprehensive mitochondrial genome analyses. It provides a suite of utilities for processing, analyzing, and visualizing mitochondrial DNA sequences with a focus on ease of use and efficiency.
 
 > 💻 **Web Server Available!** A parallel web-based version is available at [ezmito.unisi.it](http://ezmito.unisi.it)
 
@@ -75,6 +75,14 @@ Extract individual protein-coding genes from complete mitogenomes
 - Automatic gene name standardization
 - Missing gene detection
 
+- Splits sequences into transmembrane (TM), matrix (MA), and inner membrane (IM) domains following the  pipeline
+### 🔀 **EZtrampo**
+Partition aligned mitochondrial PCGs into transmembrane, matrix, and inner membrane domains, following the [TRAMPO](https://github.com/dbajpp0/TRAMPO) pipeline
+- Domain boundary inference using reference models
+- Support for custom reference organisms via user-supplied sequences and domain tables
+- Nexus partition files by gene, codon position, and structural domain
+- Composition plots and tables for skews, RSCU, and physicochemical properties
+
 ---
 
 ## 📋 Requirements
@@ -86,7 +94,7 @@ Extract individual protein-coding genes from complete mitogenomes
 - 2GB disk space
 
 ### Software Dependencies
-All dependencies are automatically installed via the provided conda environment:
+All dependencies are automatically installed via the provided conda environment (some examples here, a better description in the YML file):
 - Python 3.7+
 - Biopython
 - pandas
@@ -96,8 +104,8 @@ All dependencies are automatically installed via the provided conda environment:
 - pycirclize
 - BCBio
 - itaxotools.pygblocks
-- MAFFT (for EZpipe)
-- BLAST+ (for EZmix)
+- MAFFT
+- BLAST+
 
 ---
 
@@ -117,7 +125,7 @@ bash install.sh
 
 The installer will:
 1. ✅ Check if Conda is installed (and offer to install it if missing)
-2. ✅ Create the `ezmito` conda environment
+2. ✅ Create the `ezmito_env` conda environment
 3. ✅ Install all required dependencies
 4. ✅ Set up executable permissions
 
@@ -134,10 +142,10 @@ chmod 775 ezmito.yml
 chmod 775 ezmito-cli
 
 # Create conda environment
-conda env create -f ezmito.yml
+conda env create -f ezmito_env.yml
 
 # Activate the environment
-conda activate ezmito
+conda activate ezmito_env
 ```
 
 ### Verify Installation
@@ -145,7 +153,7 @@ conda activate ezmito
 After installation, verify everything is working:
 ```bash
 # Activate the environment
-conda activate ezmito
+conda activate ezmito_env
 
 # Check EZmito version and help
 python ezmito.py --help
@@ -159,7 +167,7 @@ python ezmito.py --help
 
 Before running EZmito, always activate the conda environment:
 ```bash
-conda activate ezmito
+conda activate ezmito_env
 ```
 
 ### General Syntax
@@ -167,10 +175,6 @@ conda activate ezmito
 python ezmito.py <command> [options]
 ```
 
-Or if using the CLI wrapper:
-```bash
-./ezmito-cli <command> [options]
-```
 
 ### Available Commands
 
@@ -275,6 +279,52 @@ python ezmito.py ezsplit -i mitogenomes.fasta -g annotations.gff -o output_dir
 - `-g, --gff`: GFF3 input file (required)
 - `-o, --outdir`: Output directory (default: outdir)
 
+
+#### 🔀 EZtrampo
+```bash
+python ezmito.py eztrampo -p genes/ -c 5 -m dme -g panc -n 4 -o output_dir
+```
+**Options:**
+- `-p, --path`: Path to FASTA files directory (required)
+- `-c, --code`: Genetic code (required)
+- `-m, --model`: Model organism nickname (required)
+- `-g, --gene_order`: Gene order model nickname
+- `-s, --sequence`: User's model organism genes in FASTA (amino acid) format
+- `-t, --tables`: User's model organism table files in TMHMM format
+- `-n, --threads`: Number of threads for MAFFT (default: 1)
+- `-o, --outdir`: Output directory (default: outdir)
+
+**Model Organisms:**
+- `hsa` - *Homo sapiens* (Chordata)
+- `ppe` - *Patiria pectinifera* (Echinodermata)
+- `dme` - *Drosophila melanogaster* (Pancrustacea+Chelicerata)
+- `aca` - *Albinaria caerulea* (Mollusca)
+- `lte` - *Lumbricus terrestris* (Annelida)
+- `cel` - *Caenorhabditis elegans* (Nematoda)
+- `mse` - *Metridium senile* (Cnidaria)
+- `user` - Custom model (requires `-s` and `-t`)
+
+**Gene Order Models:**
+- `vert` - All vertebrates
+- `panc` - Arthropods
+- `ances` - *Lumbricus terrestris*, *Caenorhabditis elegans*, *Metridium senile*
+- `albin` - *Albinaria caerulea*
+- `meta` - *Metacrangonyx*
+
+**Supported Genetic Codes:**
+- `2` - Vertebrate Mitochondrial Code
+- `3` - Yeast Mitochondrial Code
+- `4` - Mold, Protozoan, and Coelenterate Mitochondrial Code
+- `5` - Invertebrate Mitochondrial Code
+- `9` - Echinoderm and Flatworm Mitochondrial Code
+- `13` - Ascidian Mitochondrial Code
+- `14` - Alternative Flatworm Mitochondrial Code
+- `16` - Chlorophycean Mitochondrial Code
+- `21` - Trematode Mitochondrial Code
+- `22` - Scenedesmus obliquus Mitochondrial Code
+- `23` - Thraustochytrium Mitochondrial Code
+- `33` - Cephalodiscidae Mitochondrial UAA-Tyr Code
+- 
 ---
 
 ## 🌐 Web Server
@@ -303,6 +353,7 @@ Each tool generates specific outputs:
 - **EZpipe**: Aligned sequences, partitioned datasets, PartitionFinder config
 - **EZskew**: Skew analysis tables and plots (CSV, PDF)
 - **EZsplit**: Individual gene FASTA files, missing genes report
+- **EZtrampo**: Partition files, plots (PDF, HTML, CSV), statistic tables, alignment
 
 ---
 
@@ -319,17 +370,17 @@ Each tool generates specific outputs:
 **Issue: "Environment already exists"**
 ```bash
 # Remove the existing environment
-conda env remove -n ezmito
+conda env remove -n ezmito_env
 
 # Reinstall
-conda env create -f ezmito.yml
+conda env create -f ezmito_env.yml
 ```
 
 **Issue: "Permission denied"**
 ```bash
 # Make sure files are executable
 chmod 775 install.sh
-chmod 775 ezmito-cli
+chmod 775 ezmito.py
 ```
 
 ---
@@ -365,15 +416,13 @@ Found a bug or need help? Please open an issue on our [GitHub Issues page](https
 
 ## 📚 Documentation
 
-For more detailed documentation, tutorials, and examples, visit:
-- 📖 [Full Documentation](#) (coming soon)
+For more detailed documentation, visit the tutorial at:
 - 🎓 [Tutorial Videos](#) (coming soon)
-- 💬 [Community Forum](#) (coming soon)
 
 ---
 
 <div align="center">
 
-⭐ Star us on GitHub if you find EZmito useful!
+⭐ Star us on GitHub if you find EZmito2 useful!
 
 </div>
