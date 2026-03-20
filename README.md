@@ -15,7 +15,7 @@
 </div>
 
 <p align="center">
-  <img src="assets/GA.png" width="800"/>
+  <img src="asset/GA.png" width="800"/>
 </p>
 
 ---
