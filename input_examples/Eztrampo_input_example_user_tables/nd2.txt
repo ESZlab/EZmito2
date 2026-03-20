@@ -1,0 +1,26 @@
+# nd2_ppa Length: 347
+# nd2_ppa Number of predicted TMHs:  9
+# nd2_ppa Exp number of AAs in TMHs: 192.63329
+# nd2_ppa Exp number, first 60 AAs:  25.1313
+# nd2_ppa Total prob of N-in:        0.96558
+# nd2_ppa POSSIBLE N-term signal sequence
+nd2_ppa	TMHMM2.0	inside	     1     6
+nd2_ppa	TMHMM2.0	TMhelix	     7    29
+nd2_ppa	TMHMM2.0	outside	    30    58
+nd2_ppa	TMHMM2.0	TMhelix	    59    81
+nd2_ppa	TMHMM2.0	inside	    82    92
+nd2_ppa	TMHMM2.0	TMhelix	    93   115
+nd2_ppa	TMHMM2.0	outside	   116   148
+nd2_ppa	TMHMM2.0	TMhelix	   149   171
+nd2_ppa	TMHMM2.0	inside	   172   177
+nd2_ppa	TMHMM2.0	TMhelix	   178   195
+nd2_ppa	TMHMM2.0	outside	   196   199
+nd2_ppa	TMHMM2.0	TMhelix	   200   222
+nd2_ppa	TMHMM2.0	inside	   223   238
+nd2_ppa	TMHMM2.0	TMhelix	   239   261
+nd2_ppa	TMHMM2.0	outside	   262   275
+nd2_ppa	TMHMM2.0	TMhelix	   276   298
+nd2_ppa	TMHMM2.0	inside	   299   323
+nd2_ppa	TMHMM2.0	TMhelix	   324   346
+nd2_ppa	TMHMM2.0	outside	   347   347
+

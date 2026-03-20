@@ -1,0 +1,31 @@
+# cox1_ppa Length: 513
+# cox1_ppa Number of predicted TMHs:  12
+# cox1_ppa Exp number of AAs in TMHs: 269.12507
+# cox1_ppa Exp number, first 60 AAs:  25.26098
+# cox1_ppa Total prob of N-in:        0.80161
+# cox1_ppa POSSIBLE N-term signal sequence
+cox1_ppa	TMHMM2.0	inside	     1    19
+cox1_ppa	TMHMM2.0	TMhelix	    20    42
+cox1_ppa	TMHMM2.0	outside	    43    56
+cox1_ppa	TMHMM2.0	TMhelix	    57    79
+cox1_ppa	TMHMM2.0	inside	    80    99
+cox1_ppa	TMHMM2.0	TMhelix	   100   122
+cox1_ppa	TMHMM2.0	outside	   123   146
+cox1_ppa	TMHMM2.0	TMhelix	   147   169
+cox1_ppa	TMHMM2.0	inside	   170   181
+cox1_ppa	TMHMM2.0	TMhelix	   182   204
+cox1_ppa	TMHMM2.0	outside	   205   235
+cox1_ppa	TMHMM2.0	TMhelix	   236   258
+cox1_ppa	TMHMM2.0	inside	   259   270
+cox1_ppa	TMHMM2.0	TMhelix	   271   293
+cox1_ppa	TMHMM2.0	outside	   294   302
+cox1_ppa	TMHMM2.0	TMhelix	   303   325
+cox1_ppa	TMHMM2.0	inside	   326   336
+cox1_ppa	TMHMM2.0	TMhelix	   337   359
+cox1_ppa	TMHMM2.0	outside	   360   378
+cox1_ppa	TMHMM2.0	TMhelix	   379   401
+cox1_ppa	TMHMM2.0	inside	   402   413
+cox1_ppa	TMHMM2.0	TMhelix	   414   436
+cox1_ppa	TMHMM2.0	outside	   437   450
+cox1_ppa	TMHMM2.0	TMhelix	   451   473
+cox1_ppa	TMHMM2.0	inside	   474   513

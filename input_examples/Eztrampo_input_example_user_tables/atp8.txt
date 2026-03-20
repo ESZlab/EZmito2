@@ -1,0 +1,10 @@
+
+# atp8_ppa Length: 68
+# atp8_ppa Number of predicted TMHs:  1
+# atp8_ppa Exp number of AAs in TMHs: 19.13903
+# atp8_ppa Exp number, first 60 AAs:  19.13903
+# atp8_ppa Total prob of N-in:        0.66158
+# atp8_ppa POSSIBLE N-term signal sequence
+atp8_ppa	TMHMM2.0	inside	     1     6
+atp8_ppa	TMHMM2.0	TMhelix	     7    26
+atp8_ppa	TMHMM2.0	outside	    27    68

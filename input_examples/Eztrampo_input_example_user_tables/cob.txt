@@ -1,0 +1,26 @@
+# cytb_ppa Length: 380
+# cytb_ppa Number of predicted TMHs:  9
+# cytb_ppa Exp number of AAs in TMHs: 195.76544
+# cytb_ppa Exp number, first 60 AAs:  22.22368
+# cytb_ppa Total prob of N-in:        0.10268
+# cytb_ppa POSSIBLE N-term signal sequence
+cytb_ppa	TMHMM2.0	outside	     1    32
+cytb_ppa	TMHMM2.0	TMhelix	    33    55
+cytb_ppa	TMHMM2.0	inside	    56    75
+cytb_ppa	TMHMM2.0	TMhelix	    76    98
+cytb_ppa	TMHMM2.0	outside	    99   112
+cytb_ppa	TMHMM2.0	TMhelix	   113   135
+cytb_ppa	TMHMM2.0	inside	   136   139
+cytb_ppa	TMHMM2.0	TMhelix	   140   158
+cytb_ppa	TMHMM2.0	outside	   159   177
+cytb_ppa	TMHMM2.0	TMhelix	   178   200
+cytb_ppa	TMHMM2.0	inside	   201   228
+cytb_ppa	TMHMM2.0	TMhelix	   229   251
+cytb_ppa	TMHMM2.0	outside	   252   287
+cytb_ppa	TMHMM2.0	TMhelix	   288   310
+cytb_ppa	TMHMM2.0	inside	   311   322
+cytb_ppa	TMHMM2.0	TMhelix	   323   340
+cytb_ppa	TMHMM2.0	outside	   341   349
+cytb_ppa	TMHMM2.0	TMhelix	   350   372
+cytb_ppa	TMHMM2.0	inside	   373   380
+

@@ -1,0 +1,345 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region EU084034.1 1 16312
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=106915
+EU084034.1	Genbank	region	1	16312	.	+	.	ID=EU084034.1:1..16312;Dbxref=taxon:106915;Is_circular=true;Name=MT;gbkey=Src;genome=mitochondrion;mol_type=genomic DNA
+EU084034.1	Genbank	tRNA	1	69	.	+	.	ID=rna-EU084034.1:1..69;anticodon=(pos:32..34);gbkey=tRNA;product=tRNA-Ile
+EU084034.1	Genbank	exon	1	69	.	+	.	ID=exon-EU084034.1:1..69-1;Parent=rna-EU084034.1:1..69;anticodon=(pos:32..34);gbkey=tRNA;product=tRNA-Ile
+EU084034.1	Genbank	tRNA	75	140	.	-	.	ID=rna-EU084034.1:75..140;anticodon=(pos:complement(107..109));gbkey=tRNA;product=tRNA-Gln
+EU084034.1	Genbank	exon	75	140	.	-	.	ID=exon-EU084034.1:75..140-1;Parent=rna-EU084034.1:75..140;anticodon=(pos:complement(107..109));gbkey=tRNA;product=tRNA-Gln
+EU084034.1	Genbank	tRNA	143	212	.	+	.	ID=rna-EU084034.1:143..212;anticodon=(pos:173..175);gbkey=tRNA;product=tRNA-Met
+EU084034.1	Genbank	exon	143	212	.	+	.	ID=exon-EU084034.1:143..212-1;Parent=rna-EU084034.1:143..212;anticodon=(pos:173..175);gbkey=tRNA;product=tRNA-Met
+EU084034.1	Genbank	gene	213	1217	.	+	.	ID=gene-ND2;Name=ND2;gbkey=Gene;gene=ND2;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	213	1217	.	+	0	ID=cds-ABS88963.1;Parent=gene-ND2;Dbxref=NCBI_GP:ABS88963.1;Name=ABS88963.1;gbkey=CDS;gene=ND2;product=NADH dehydrogenase subunit 2;protein_id=ABS88963.1;transl_table=5
+EU084034.1	Genbank	tRNA	1222	1287	.	+	.	ID=rna-EU084034.1:1222..1287;anticodon=(pos:1252..1254);gbkey=tRNA;product=tRNA-Trp
+EU084034.1	Genbank	exon	1222	1287	.	+	.	ID=exon-EU084034.1:1222..1287-1;Parent=rna-EU084034.1:1222..1287;anticodon=(pos:1252..1254);gbkey=tRNA;product=tRNA-Trp
+EU084034.1	Genbank	tRNA	1320	1390	.	-	.	ID=rna-EU084034.1:1320..1390;anticodon=(pos:complement(1353..1355));gbkey=tRNA;product=tRNA-Cys
+EU084034.1	Genbank	exon	1320	1390	.	-	.	ID=exon-EU084034.1:1320..1390-1;Parent=rna-EU084034.1:1320..1390;anticodon=(pos:complement(1353..1355));gbkey=tRNA;product=tRNA-Cys
+EU084034.1	Genbank	tRNA	1389	1454	.	-	.	ID=rna-EU084034.1:1389..1454;anticodon=(pos:complement(1423..1425));gbkey=tRNA;product=tRNA-Tyr
+EU084034.1	Genbank	exon	1389	1454	.	-	.	ID=exon-EU084034.1:1389..1454-1;Parent=rna-EU084034.1:1389..1454;anticodon=(pos:complement(1423..1425));gbkey=tRNA;product=tRNA-Tyr
+EU084034.1	Genbank	gene	1456	2988	.	+	.	ID=gene-COX1;Name=COX1;gbkey=Gene;gene=COX1;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	1456	2988	.	+	0	ID=cds-ABS88964.1;Parent=gene-COX1;Dbxref=NCBI_GP:ABS88964.1;Name=ABS88964.1;gbkey=CDS;gene=COX1;product=cytochrome c oxidase subunit I;protein_id=ABS88964.1;transl_table=5
+EU084034.1	Genbank	tRNA	3001	3064	.	+	.	ID=rna-EU084034.1:3001..3064;anticodon=(pos:3030..3032);codons=UUR;gbkey=tRNA;product=tRNA-Leu
+EU084034.1	Genbank	exon	3001	3064	.	+	.	ID=exon-EU084034.1:3001..3064-1;Parent=rna-EU084034.1:3001..3064;anticodon=(pos:3030..3032);codons=UUR;gbkey=tRNA;product=tRNA-Leu
+EU084034.1	Genbank	gene	3065	3742	.	+	.	ID=gene-COX2;Name=COX2;gbkey=Gene;gene=COX2;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	3065	3742	.	+	0	ID=cds-ABS88965.1;Parent=gene-COX2;Dbxref=NCBI_GP:ABS88965.1;Name=ABS88965.1;gbkey=CDS;gene=COX2;product=cytochrome c oxidase subunit II;protein_id=ABS88965.1;transl_table=5
+EU084034.1	Genbank	tRNA	3772	3842	.	+	.	ID=rna-EU084034.1:3772..3842;anticodon=(pos:3811..3813);gbkey=tRNA;product=tRNA-Lys
+EU084034.1	Genbank	exon	3772	3842	.	+	.	ID=exon-EU084034.1:3772..3842-1;Parent=rna-EU084034.1:3772..3842;anticodon=(pos:3811..3813);gbkey=tRNA;product=tRNA-Lys
+EU084034.1	Genbank	tRNA	3842	3905	.	+	.	ID=rna-EU084034.1:3842..3905;anticodon=(pos:3873..3875);gbkey=tRNA;product=tRNA-Asp
+EU084034.1	Genbank	exon	3842	3905	.	+	.	ID=exon-EU084034.1:3842..3905-1;Parent=rna-EU084034.1:3842..3905;anticodon=(pos:3873..3875);gbkey=tRNA;product=tRNA-Asp
+EU084034.1	Genbank	gene	3906	4067	.	+	.	ID=gene-ATP8;Name=ATP8;gbkey=Gene;gene=ATP8;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	3906	4067	.	+	0	ID=cds-ABS88966.1;Parent=gene-ATP8;Dbxref=NCBI_GP:ABS88966.1;Name=ABS88966.1;gbkey=CDS;gene=ATP8;product=ATP synthase F0 subunit 8;protein_id=ABS88966.1;transl_table=5
+EU084034.1	Genbank	gene	4061	4738	.	+	.	ID=gene-ATP6;Name=ATP6;gbkey=Gene;gene=ATP6;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	4061	4738	.	+	0	ID=cds-ABS88967.1;Parent=gene-ATP6;Dbxref=NCBI_GP:ABS88967.1;Name=ABS88967.1;gbkey=CDS;gene=ATP6;product=ATP synthase F0 subunit 6;protein_id=ABS88967.1;transl_table=5
+EU084034.1	Genbank	gene	4803	5591	.	+	.	ID=gene-COX3;Name=COX3;gbkey=Gene;gene=COX3;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	4803	5591	.	+	0	ID=cds-ABS88968.1;Parent=gene-COX3;Dbxref=NCBI_GP:ABS88968.1;Name=ABS88968.1;gbkey=CDS;gene=COX3;product=cytochrome c oxidase subunit III;protein_id=ABS88968.1;transl_table=5
+EU084034.1	Genbank	tRNA	5650	5708	.	+	.	ID=rna-EU084034.1:5650..5708;anticodon=(pos:5679..5681);gbkey=tRNA;product=tRNA-Gly
+EU084034.1	Genbank	exon	5650	5708	.	+	.	ID=exon-EU084034.1:5650..5708-1;Parent=rna-EU084034.1:5650..5708;anticodon=(pos:5679..5681);gbkey=tRNA;product=tRNA-Gly
+EU084034.1	Genbank	gene	5713	6057	.	+	.	ID=gene-ND3;Name=ND3;gbkey=Gene;gene=ND3;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	5713	6057	.	+	0	ID=cds-ABS88969.1;Parent=gene-ND3;Dbxref=NCBI_GP:ABS88969.1;Name=ABS88969.1;gbkey=CDS;gene=ND3;product=NADH dehydrogenase subunit 3;protein_id=ABS88969.1;transl_table=5
+EU084034.1	Genbank	tRNA	6062	6124	.	+	.	ID=rna-EU084034.1:6062..6124;anticodon=(pos:6091..6093);gbkey=tRNA;product=tRNA-Ala
+EU084034.1	Genbank	exon	6062	6124	.	+	.	ID=exon-EU084034.1:6062..6124-1;Parent=rna-EU084034.1:6062..6124;anticodon=(pos:6091..6093);gbkey=tRNA;product=tRNA-Ala
+EU084034.1	Genbank	tRNA	6122	6188	.	+	.	ID=rna-EU084034.1:6122..6188;anticodon=(pos:6151..6153);gbkey=tRNA;product=tRNA-Arg
+EU084034.1	Genbank	exon	6122	6188	.	+	.	ID=exon-EU084034.1:6122..6188-1;Parent=rna-EU084034.1:6122..6188;anticodon=(pos:6151..6153);gbkey=tRNA;product=tRNA-Arg
+EU084034.1	Genbank	tRNA	6186	6254	.	+	.	ID=rna-EU084034.1:6186..6254;anticodon=(pos:6215..6217);gbkey=tRNA;product=tRNA-Asn
+EU084034.1	Genbank	exon	6186	6254	.	+	.	ID=exon-EU084034.1:6186..6254-1;Parent=rna-EU084034.1:6186..6254;anticodon=(pos:6215..6217);gbkey=tRNA;product=tRNA-Asn
+EU084034.1	Genbank	tRNA	6253	6319	.	+	.	ID=rna-EU084034.1:6253..6319;anticodon=(pos:6280..6282);codons=AGY;gbkey=tRNA;product=tRNA-Ser
+EU084034.1	Genbank	exon	6253	6319	.	+	.	ID=exon-EU084034.1:6253..6319-1;Parent=rna-EU084034.1:6253..6319;anticodon=(pos:6280..6282);codons=AGY;gbkey=tRNA;product=tRNA-Ser
+EU084034.1	Genbank	tRNA	6322	6388	.	+	.	ID=rna-EU084034.1:6322..6388;anticodon=(pos:6351..6353);gbkey=tRNA;product=tRNA-Glu
+EU084034.1	Genbank	exon	6322	6388	.	+	.	ID=exon-EU084034.1:6322..6388-1;Parent=rna-EU084034.1:6322..6388;anticodon=(pos:6351..6353);gbkey=tRNA;product=tRNA-Glu
+EU084034.1	Genbank	tRNA	6400	6462	.	-	.	ID=rna-EU084034.1:6400..6462;anticodon=(pos:complement(6430..6432));gbkey=tRNA;product=tRNA-Phe
+EU084034.1	Genbank	exon	6400	6462	.	-	.	ID=exon-EU084034.1:6400..6462-1;Parent=rna-EU084034.1:6400..6462;anticodon=(pos:complement(6430..6432));gbkey=tRNA;product=tRNA-Phe
+EU084034.1	Genbank	gene	6469	8175	.	-	.	ID=gene-ND5;Name=ND5;gbkey=Gene;gene=ND5;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	6469	8175	.	-	0	ID=cds-ABS88970.1;Parent=gene-ND5;Dbxref=NCBI_GP:ABS88970.1;Name=ABS88970.1;gbkey=CDS;gene=ND5;product=NADH dehydrogenase subunit 5;protein_id=ABS88970.1;transl_table=5
+EU084034.1	Genbank	tRNA	8203	8267	.	-	.	ID=rna-EU084034.1:8203..8267;anticodon=(pos:complement(8232..8234));gbkey=tRNA;product=tRNA-His
+EU084034.1	Genbank	exon	8203	8267	.	-	.	ID=exon-EU084034.1:8203..8267-1;Parent=rna-EU084034.1:8203..8267;anticodon=(pos:complement(8232..8234));gbkey=tRNA;product=tRNA-His
+EU084034.1	Genbank	gene	8280	9644	.	-	.	ID=gene-ND4;Name=ND4;gbkey=Gene;gene=ND4;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	8280	9644	.	-	0	ID=cds-ABS88971.1;Parent=gene-ND4;Dbxref=NCBI_GP:ABS88971.1;Name=ABS88971.1;gbkey=CDS;gene=ND4;product=NADH dehydrogenase subunit 4;protein_id=ABS88971.1;transl_table=5
+EU084034.1	Genbank	gene	9727	9996	.	-	.	ID=gene-ND4L;Name=ND4L;gbkey=Gene;gene=ND4L;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	9727	9996	.	-	0	ID=cds-ABS88972.1;Parent=gene-ND4L;Dbxref=NCBI_GP:ABS88972.1;Name=ABS88972.1;gbkey=CDS;gene=ND4L;product=NADH dehydrogenase subunit 4L;protein_id=ABS88972.1;transl_table=5
+EU084034.1	Genbank	tRNA	10063	10130	.	+	.	ID=rna-EU084034.1:10063..10130;anticodon=(pos:10095..10097);gbkey=tRNA;product=tRNA-Thr
+EU084034.1	Genbank	exon	10063	10130	.	+	.	ID=exon-EU084034.1:10063..10130-1;Parent=rna-EU084034.1:10063..10130;anticodon=(pos:10095..10097);gbkey=tRNA;product=tRNA-Thr
+EU084034.1	Genbank	tRNA	10129	10196	.	-	.	ID=rna-EU084034.1:10129..10196;anticodon=(pos:complement(10165..10167));gbkey=tRNA;product=tRNA-Pro
+EU084034.1	Genbank	exon	10129	10196	.	-	.	ID=exon-EU084034.1:10129..10196-1;Parent=rna-EU084034.1:10129..10196;anticodon=(pos:complement(10165..10167));gbkey=tRNA;product=tRNA-Pro
+EU084034.1	Genbank	gene	10206	10718	.	+	.	ID=gene-ND6;Name=ND6;gbkey=Gene;gene=ND6;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	10206	10718	.	+	0	ID=cds-ABS88973.1;Parent=gene-ND6;Dbxref=NCBI_GP:ABS88973.1;Name=ABS88973.1;gbkey=CDS;gene=ND6;product=NADH dehydrogenase subunit 6;protein_id=ABS88973.1;transl_table=5
+EU084034.1	Genbank	gene	10790	11947	.	+	.	ID=gene-CYTB;Name=CYTB;gbkey=Gene;gene=CYTB;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	10790	11947	.	+	0	ID=cds-ABS88974.1;Parent=gene-CYTB;Dbxref=NCBI_GP:ABS88974.1;Name=ABS88974.1;gbkey=CDS;gene=CYTB;product=cytochrome b;protein_id=ABS88974.1;transl_table=5
+EU084034.1	Genbank	tRNA	11919	11991	.	-	.	ID=rna-EU084034.1:11919..11991;anticodon=(pos:complement(11954..11956));codons=UCN;gbkey=tRNA;product=tRNA-Ser
+EU084034.1	Genbank	exon	11919	11991	.	-	.	ID=exon-EU084034.1:11919..11991-1;Parent=rna-EU084034.1:11919..11991;anticodon=(pos:complement(11954..11956));codons=UCN;gbkey=tRNA;product=tRNA-Ser
+EU084034.1	Genbank	tRNA	12009	12076	.	-	.	ID=rna-EU084034.1:12009..12076;anticodon=(pos:complement(12042..12044));codons=CUN;gbkey=tRNA;product=tRNA-Leu
+EU084034.1	Genbank	exon	12009	12076	.	-	.	ID=exon-EU084034.1:12009..12076-1;Parent=rna-EU084034.1:12009..12076;anticodon=(pos:complement(12042..12044));codons=CUN;gbkey=tRNA;product=tRNA-Leu
+EU084034.1	Genbank	repeat_region	12151	12170	.	+	.	ID=id-EU084034.1:12151..12170;gbkey=repeat_region;rpt_unit_seq=ta
+EU084034.1	Genbank	tRNA	12251	12319	.	+	.	ID=rna-EU084034.1:12251..12319;anticodon=(pos:12282..12284);codons=UCN;gbkey=tRNA;product=tRNA-Ser
+EU084034.1	Genbank	exon	12251	12319	.	+	.	ID=exon-EU084034.1:12251..12319-1;Parent=rna-EU084034.1:12251..12319;anticodon=(pos:12282..12284);codons=UCN;gbkey=tRNA;product=tRNA-Ser
+EU084034.1	Genbank	tandem_repeat	12425	12864	.	+	.	ID=id-EU084034.1:12425..12864;Note=5 complete repeats;gbkey=repeat_region;rpt_type=tandem
+EU084034.1	Genbank	gene	12905	13831	.	-	.	ID=gene-ND1;Name=ND1;gbkey=Gene;gene=ND1;gene_biotype=protein_coding
+EU084034.1	Genbank	CDS	12905	13831	.	-	0	ID=cds-ABS88975.1;Parent=gene-ND1;Dbxref=NCBI_GP:ABS88975.1;Name=ABS88975.1;gbkey=CDS;gene=ND1;product=NADH dehydrogenase subunit 1;protein_id=ABS88975.1;transl_table=5
+EU084034.1	Genbank	tRNA	13869	13934	.	-	.	ID=rna-EU084034.1:13869..13934;anticodon=(pos:complement(13903..13905));codons=CUN;gbkey=tRNA;product=tRNA-Leu
+EU084034.1	Genbank	exon	13869	13934	.	-	.	ID=exon-EU084034.1:13869..13934-1;Parent=rna-EU084034.1:13869..13934;anticodon=(pos:complement(13903..13905));codons=CUN;gbkey=tRNA;product=tRNA-Leu
+EU084034.1	Genbank	rRNA	13935	15123	.	-	.	ID=rna-EU084034.1:13935..15123;gbkey=rRNA;product=16S ribosomal RNA
+EU084034.1	Genbank	exon	13935	15123	.	-	.	ID=exon-EU084034.1:13935..15123-1;Parent=rna-EU084034.1:13935..15123;gbkey=rRNA;product=16S ribosomal RNA
+EU084034.1	Genbank	tRNA	15124	15192	.	-	.	ID=rna-EU084034.1:15124..15192;anticodon=(pos:complement(15158..15160));gbkey=tRNA;product=tRNA-Val
+EU084034.1	Genbank	exon	15124	15192	.	-	.	ID=exon-EU084034.1:15124..15192-1;Parent=rna-EU084034.1:15124..15192;anticodon=(pos:complement(15158..15160));gbkey=tRNA;product=tRNA-Val
+EU084034.1	Genbank	rRNA	15193	15929	.	-	.	ID=rna-EU084034.1:15193..15929;gbkey=rRNA;product=12S ribosomal RNA
+EU084034.1	Genbank	exon	15193	15929	.	-	.	ID=exon-EU084034.1:15193..15929-1;Parent=rna-EU084034.1:15193..15929;gbkey=rRNA;product=12S ribosomal RNA
+EU084034.1	Genbank	sequence_feature	15930	16312	.	+	.	ID=id-EU084034.1:15930..16312;Note=putative control region%3B A+T-rich region;gbkey=misc_feature
+
+##sequence-region MK433191.1 1 15743
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=359048
+MK433191.1	Genbank	region	1	15743	.	+	.	ID=MK433191.1:1..15743;Dbxref=taxon:359048;Is_circular=true;Name=MT;country=Southern Ocean: sub-Antarctic Marion Island;gbkey=Src;genome=mitochondrion;mol_type=genomic DNA;sub-species=travei
+MK433191.1	Genbank	tRNA	90	157	.	-	.	ID=rna-MK433191.1:90..157;gbkey=tRNA;product=tRNA-Gln
+MK433191.1	Genbank	exon	90	157	.	-	.	ID=exon-MK433191.1:90..157-1;Parent=rna-MK433191.1:90..157;gbkey=tRNA;product=tRNA-Gln
+MK433191.1	Genbank	tRNA	169	237	.	+	.	ID=rna-MK433191.1:169..237;gbkey=tRNA;product=tRNA-Met
+MK433191.1	Genbank	exon	169	237	.	+	.	ID=exon-MK433191.1:169..237-1;Parent=rna-MK433191.1:169..237;gbkey=tRNA;product=tRNA-Met
+MK433191.1	Genbank	gene	238	1236	.	+	.	ID=gene-ND2-2;Name=ND2;gbkey=Gene;gene=ND2;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	238	1236	.	+	0	ID=cds-QFX74491.1;Parent=gene-ND2-2;Dbxref=NCBI_GP:QFX74491.1;Name=QFX74491.1;gbkey=CDS;gene=ND2;product=NADH dehydrogenase subunit 2;protein_id=QFX74491.1;transl_table=5
+MK433191.1	Genbank	tRNA	1235	1302	.	+	.	ID=rna-MK433191.1:1235..1302;gbkey=tRNA;product=tRNA-Trp
+MK433191.1	Genbank	exon	1235	1302	.	+	.	ID=exon-MK433191.1:1235..1302-1;Parent=rna-MK433191.1:1235..1302;gbkey=tRNA;product=tRNA-Trp
+MK433191.1	Genbank	tRNA	1311	1372	.	-	.	ID=rna-MK433191.1:1311..1372;gbkey=tRNA;product=tRNA-Cys
+MK433191.1	Genbank	exon	1311	1372	.	-	.	ID=exon-MK433191.1:1311..1372-1;Parent=rna-MK433191.1:1311..1372;gbkey=tRNA;product=tRNA-Cys
+MK433191.1	Genbank	tRNA	1373	1435	.	-	.	ID=rna-MK433191.1:1373..1435;gbkey=tRNA;product=tRNA-Tyr
+MK433191.1	Genbank	exon	1373	1435	.	-	.	ID=exon-MK433191.1:1373..1435-1;Parent=rna-MK433191.1:1373..1435;gbkey=tRNA;product=tRNA-Tyr
+MK433191.1	Genbank	gene	1437	2970	.	+	.	ID=gene-COX1-2;Name=COX1;gbkey=Gene;gene=COX1;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	1437	2970	.	+	0	ID=cds-QFX74492.1;Parent=gene-COX1-2;Dbxref=NCBI_GP:QFX74492.1;Name=QFX74492.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX1;product=cytochrome c oxidase subunit I;protein_id=QFX74492.1;transl_except=(pos:2970..2970%2Caa:TERM);transl_table=5
+MK433191.1	Genbank	tRNA	2971	3033	.	+	.	ID=rna-MK433191.1:2971..3033;gbkey=tRNA;product=tRNA-Leu
+MK433191.1	Genbank	exon	2971	3033	.	+	.	ID=exon-MK433191.1:2971..3033-1;Parent=rna-MK433191.1:2971..3033;gbkey=tRNA;product=tRNA-Leu
+MK433191.1	Genbank	gene	3034	3716	.	+	.	ID=gene-COX2-2;Name=COX2;gbkey=Gene;gene=COX2;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	3034	3716	.	+	0	ID=cds-QFX74480.1;Parent=gene-COX2-2;Dbxref=NCBI_GP:QFX74480.1;Name=QFX74480.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX2;product=cytochrome c oxidase subunit II;protein_id=QFX74480.1;transl_except=(pos:3715..3716%2Caa:TERM);transl_table=5
+MK433191.1	Genbank	tRNA	3717	3786	.	+	.	ID=rna-MK433191.1:3717..3786;gbkey=tRNA;product=tRNA-Lys
+MK433191.1	Genbank	exon	3717	3786	.	+	.	ID=exon-MK433191.1:3717..3786-1;Parent=rna-MK433191.1:3717..3786;gbkey=tRNA;product=tRNA-Lys
+MK433191.1	Genbank	tRNA	3787	3850	.	+	.	ID=rna-MK433191.1:3787..3850;gbkey=tRNA;product=tRNA-Asp
+MK433191.1	Genbank	exon	3787	3850	.	+	.	ID=exon-MK433191.1:3787..3850-1;Parent=rna-MK433191.1:3787..3850;gbkey=tRNA;product=tRNA-Asp
+MK433191.1	Genbank	gene	3860	4018	.	+	.	ID=gene-ATP8-2;Name=ATP8;gbkey=Gene;gene=ATP8;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	3860	4018	.	+	0	ID=cds-QFX74481.1;Parent=gene-ATP8-2;Dbxref=NCBI_GP:QFX74481.1;Name=QFX74481.1;gbkey=CDS;gene=ATP8;product=ATP synthase F0 subunit 8;protein_id=QFX74481.1;transl_table=5
+MK433191.1	Genbank	gene	4015	4692	.	+	.	ID=gene-ATP6-2;Name=ATP6;gbkey=Gene;gene=ATP6;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	4015	4692	.	+	0	ID=cds-QFX74482.1;Parent=gene-ATP6-2;Dbxref=NCBI_GP:QFX74482.1;Name=QFX74482.1;gbkey=CDS;gene=ATP6;product=ATP synthase F0 subunit 6;protein_id=QFX74482.1;transl_table=5
+MK433191.1	Genbank	gene	4692	5478	.	+	.	ID=gene-COX3-2;Name=COX3;gbkey=Gene;gene=COX3;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	4692	5478	.	+	0	ID=cds-QFX74483.1;Parent=gene-COX3-2;Dbxref=NCBI_GP:QFX74483.1;Name=QFX74483.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX3;product=cytochrome c oxidase subunit III;protein_id=QFX74483.1;transl_except=(pos:5478..5478%2Caa:TERM);transl_table=5
+MK433191.1	Genbank	tRNA	5479	5539	.	+	.	ID=rna-MK433191.1:5479..5539;gbkey=tRNA;product=tRNA-Gly
+MK433191.1	Genbank	exon	5479	5539	.	+	.	ID=exon-MK433191.1:5479..5539-1;Parent=rna-MK433191.1:5479..5539;gbkey=tRNA;product=tRNA-Gly
+MK433191.1	Genbank	gene	5537	5881	.	+	.	ID=gene-ND3-2;Name=ND3;gbkey=Gene;gene=ND3;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	5537	5881	.	+	0	ID=cds-QFX74484.1;Parent=gene-ND3-2;Dbxref=NCBI_GP:QFX74484.1;Name=QFX74484.1;gbkey=CDS;gene=ND3;product=NADH dehydrogenase subunit 3;protein_id=QFX74484.1;transl_table=5
+MK433191.1	Genbank	tRNA	5932	5992	.	+	.	ID=rna-MK433191.1:5932..5992;gbkey=tRNA;product=tRNA-Ala
+MK433191.1	Genbank	exon	5932	5992	.	+	.	ID=exon-MK433191.1:5932..5992-1;Parent=rna-MK433191.1:5932..5992;gbkey=tRNA;product=tRNA-Ala
+MK433191.1	Genbank	tRNA	5992	6055	.	+	.	ID=rna-MK433191.1:5992..6055;gbkey=tRNA;product=tRNA-Arg
+MK433191.1	Genbank	exon	5992	6055	.	+	.	ID=exon-MK433191.1:5992..6055-1;Parent=rna-MK433191.1:5992..6055;gbkey=tRNA;product=tRNA-Arg
+MK433191.1	Genbank	tRNA	6054	6116	.	+	.	ID=rna-MK433191.1:6054..6116;gbkey=tRNA;product=tRNA-Asn
+MK433191.1	Genbank	exon	6054	6116	.	+	.	ID=exon-MK433191.1:6054..6116-1;Parent=rna-MK433191.1:6054..6116;gbkey=tRNA;product=tRNA-Asn
+MK433191.1	Genbank	tRNA	6117	6184	.	+	.	ID=rna-MK433191.1:6117..6184;gbkey=tRNA;product=tRNA-Ser
+MK433191.1	Genbank	exon	6117	6184	.	+	.	ID=exon-MK433191.1:6117..6184-1;Parent=rna-MK433191.1:6117..6184;gbkey=tRNA;product=tRNA-Ser
+MK433191.1	Genbank	tRNA	6199	6262	.	+	.	ID=rna-MK433191.1:6199..6262;gbkey=tRNA;product=tRNA-Glu
+MK433191.1	Genbank	exon	6199	6262	.	+	.	ID=exon-MK433191.1:6199..6262-1;Parent=rna-MK433191.1:6199..6262;gbkey=tRNA;product=tRNA-Glu
+MK433191.1	Genbank	tRNA	6262	6326	.	-	.	ID=rna-MK433191.1:6262..6326;gbkey=tRNA;product=tRNA-Phe
+MK433191.1	Genbank	exon	6262	6326	.	-	.	ID=exon-MK433191.1:6262..6326-1;Parent=rna-MK433191.1:6262..6326;gbkey=tRNA;product=tRNA-Phe
+MK433191.1	Genbank	gene	6326	8029	.	-	.	ID=gene-ND5-2;Name=ND5;gbkey=Gene;gene=ND5;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	6326	8029	.	-	0	ID=cds-QFX74485.1;Parent=gene-ND5-2;Dbxref=NCBI_GP:QFX74485.1;Name=QFX74485.1;gbkey=CDS;gene=ND5;product=NADH dehydrogenase subunit 5;protein_id=QFX74485.1;transl_table=5
+MK433191.1	Genbank	tRNA	8031	8093	.	-	.	ID=rna-MK433191.1:8031..8093;gbkey=tRNA;product=tRNA-His
+MK433191.1	Genbank	exon	8031	8093	.	-	.	ID=exon-MK433191.1:8031..8093-1;Parent=rna-MK433191.1:8031..8093;gbkey=tRNA;product=tRNA-His
+MK433191.1	Genbank	gene	8093	9451	.	-	.	ID=gene-ND4-2;Name=ND4;gbkey=Gene;gene=ND4;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	8093	9451	.	-	0	ID=cds-QFX74486.1;Parent=gene-ND4-2;Dbxref=NCBI_GP:QFX74486.1;Name=QFX74486.1;gbkey=CDS;gene=ND4;product=NADH dehydrogenase subunit 4;protein_id=QFX74486.1;transl_table=5
+MK433191.1	Genbank	gene	9458	9739	.	-	.	ID=gene-ND4L-2;Name=ND4L;gbkey=Gene;gene=ND4L;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	9458	9739	.	-	0	ID=cds-QFX74487.1;Parent=gene-ND4L-2;Dbxref=NCBI_GP:QFX74487.1;Name=QFX74487.1;gbkey=CDS;gene=ND4L;product=NADH dehydrogenase subunit 4L;protein_id=QFX74487.1;transl_table=5
+MK433191.1	Genbank	tRNA	9742	9803	.	+	.	ID=rna-MK433191.1:9742..9803;gbkey=tRNA;product=tRNA-Thr
+MK433191.1	Genbank	exon	9742	9803	.	+	.	ID=exon-MK433191.1:9742..9803-1;Parent=rna-MK433191.1:9742..9803;gbkey=tRNA;product=tRNA-Thr
+MK433191.1	Genbank	tRNA	9804	9866	.	-	.	ID=rna-MK433191.1:9804..9866;gbkey=tRNA;product=tRNA-Pro
+MK433191.1	Genbank	exon	9804	9866	.	-	.	ID=exon-MK433191.1:9804..9866-1;Parent=rna-MK433191.1:9804..9866;gbkey=tRNA;product=tRNA-Pro
+MK433191.1	Genbank	gene	9869	10348	.	+	.	ID=gene-ND6-2;Name=ND6;gbkey=Gene;gene=ND6;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	9869	10348	.	+	0	ID=cds-QFX74488.1;Parent=gene-ND6-2;Dbxref=NCBI_GP:QFX74488.1;Name=QFX74488.1;gbkey=CDS;gene=ND6;product=NADH dehydrogenase subunit 6;protein_id=QFX74488.1;transl_table=5
+MK433191.1	Genbank	gene	10348	11481	.	+	.	ID=gene-CYTB-2;Name=CYTB;gbkey=Gene;gene=CYTB;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	10348	11481	.	+	0	ID=cds-QFX74489.1;Parent=gene-CYTB-2;Dbxref=NCBI_GP:QFX74489.1;Name=QFX74489.1;gbkey=CDS;gene=CYTB;product=cytochrome b;protein_id=QFX74489.1;transl_table=5
+MK433191.1	Genbank	tRNA	11481	11550	.	+	.	ID=rna-MK433191.1:11481..11550;gbkey=tRNA;product=tRNA-Ser
+MK433191.1	Genbank	exon	11481	11550	.	+	.	ID=exon-MK433191.1:11481..11550-1;Parent=rna-MK433191.1:11481..11550;gbkey=tRNA;product=tRNA-Ser
+MK433191.1	Genbank	gene	12323	13252	.	-	.	ID=gene-ND1-2;Name=ND1;gbkey=Gene;gene=ND1;gene_biotype=protein_coding
+MK433191.1	Genbank	CDS	12323	13252	.	-	0	ID=cds-QFX74490.1;Parent=gene-ND1-2;Dbxref=NCBI_GP:QFX74490.1;Name=QFX74490.1;gbkey=CDS;gene=ND1;product=NADH dehydrogenase subunit 1;protein_id=QFX74490.1;transl_table=5
+MK433191.1	Genbank	tRNA	13253	13318	.	-	.	ID=rna-MK433191.1:13253..13318;gbkey=tRNA;product=tRNA-Leu
+MK433191.1	Genbank	exon	13253	13318	.	-	.	ID=exon-MK433191.1:13253..13318-1;Parent=rna-MK433191.1:13253..13318;gbkey=tRNA;product=tRNA-Leu
+MK433191.1	Genbank	rRNA	13336	14463	.	-	.	ID=rna-MK433191.1:13336..14463;gbkey=rRNA;product=16S ribosomal RNA
+MK433191.1	Genbank	exon	13336	14463	.	-	.	ID=exon-MK433191.1:13336..14463-1;Parent=rna-MK433191.1:13336..14463;gbkey=rRNA;product=16S ribosomal RNA
+MK433191.1	Genbank	tRNA	14533	14595	.	-	.	ID=rna-MK433191.1:14533..14595;gbkey=tRNA;product=tRNA-Val
+MK433191.1	Genbank	exon	14533	14595	.	-	.	ID=exon-MK433191.1:14533..14595-1;Parent=rna-MK433191.1:14533..14595;gbkey=tRNA;product=tRNA-Val
+MK433191.1	Genbank	rRNA	14592	15280	.	-	.	ID=rna-MK433191.1:14592..15280;gbkey=rRNA;product=12S ribosomal RNA
+MK433191.1	Genbank	exon	14592	15280	.	-	.	ID=exon-MK433191.1:14592..15280-1;Parent=rna-MK433191.1:14592..15280;gbkey=rRNA;product=12S ribosomal RNA
+MK433191.1	Genbank	tRNA	15742	15803	.	+	.	ID=rna-MK433191.1:1..15743;gbkey=tRNA;product=tRNA-Ile
+MK433191.1	Genbank	exon	15742	15803	.	+	.	ID=exon-MK433191.1:1..15743-1;Parent=rna-MK433191.1:1..15743;gbkey=tRNA;product=tRNA-Ile
+
+##sequence-region KT985987.1 1 15728
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=48709
+KT985987.1	Genbank	region	1	15728	.	+	.	ID=KT985987.1:1..15728;Dbxref=taxon:48709;Is_circular=true;Name=MT;gbkey=Src;genome=mitochondrion;mol_type=genomic DNA
+KT985987.1	Genbank	gene	4	68	.	+	.	ID=gene-trnL1(tag);Name=trnL1(tag);gbkey=Gene;gene=trnL1(tag);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	4	68	.	+	.	ID=rna-trnL1(tag);Parent=gene-trnL1(tag);Note=tRNA-LEU1;gbkey=tRNA;gene=trnL1(tag);product=tRNA-Leu
+KT985987.1	Genbank	exon	4	68	.	+	.	ID=exon-trnL1(tag)-1;Parent=rna-trnL1(tag);Note=tRNA-LEU1;gbkey=tRNA;gene=trnL1(tag);product=tRNA-Leu
+KT985987.1	Genbank	gene	93	1040	.	+	.	ID=gene-nad1;Name=nad1;gbkey=Gene;gene=nad1;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	93	1040	.	+	0	ID=cds-ANJ04201.1;Parent=gene-nad1;Dbxref=NCBI_GP:ANJ04201.1;Name=ANJ04201.1;gbkey=CDS;gene=nad1;product=NADH dehydrogenase subunit 1;protein_id=ANJ04201.1;transl_table=5
+KT985987.1	Genbank	gene	1021	1091	.	-	.	ID=gene-trnS2(tga);Name=trnS2(tga);gbkey=Gene;gene=trnS2(tga);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	1021	1091	.	-	.	ID=rna-trnS2(tga);Parent=gene-trnS2(tga);Note=tRNA-SER2;gbkey=tRNA;gene=trnS2(tga);product=tRNA-Ser
+KT985987.1	Genbank	exon	1021	1091	.	-	.	ID=exon-trnS2(tga)-1;Parent=rna-trnS2(tga);Note=tRNA-SER2;gbkey=tRNA;gene=trnS2(tga);product=tRNA-Ser
+KT985987.1	Genbank	gene	1090	2223	.	-	.	ID=gene-cytb;Name=cytb;gbkey=Gene;gene=cytb;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	1090	2223	.	-	0	ID=cds-ANJ04202.1;Parent=gene-cytb;Dbxref=NCBI_GP:ANJ04202.1;Name=ANJ04202.1;gbkey=CDS;gene=cytb;product=cytochrome b;protein_id=ANJ04202.1;transl_table=5
+KT985987.1	Genbank	gene	2223	2708	.	-	.	ID=gene-nad6;Name=nad6;gbkey=Gene;gene=nad6;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	2223	2708	.	-	0	ID=cds-ANJ04203.1;Parent=gene-nad6;Dbxref=NCBI_GP:ANJ04203.1;Name=ANJ04203.1;gbkey=CDS;gene=nad6;product=NADH dehydrogenase subunit 6;protein_id=ANJ04203.1;transl_table=5
+KT985987.1	Genbank	gene	2711	2775	.	+	.	ID=gene-trnP(tgg);Name=trnP(tgg);gbkey=Gene;gene=trnP(tgg);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	2711	2775	.	+	.	ID=rna-trnP(tgg);Parent=gene-trnP(tgg);gbkey=tRNA;gene=trnP(tgg);product=tRNA-Pro
+KT985987.1	Genbank	exon	2711	2775	.	+	.	ID=exon-trnP(tgg)-1;Parent=rna-trnP(tgg);gbkey=tRNA;gene=trnP(tgg);product=tRNA-Pro
+KT985987.1	Genbank	gene	2776	2838	.	-	.	ID=gene-trnT(tgt);Name=trnT(tgt);gbkey=Gene;gene=trnT(tgt);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	2776	2838	.	-	.	ID=rna-trnT(tgt);Parent=gene-trnT(tgt);gbkey=tRNA;gene=trnT(tgt);product=tRNA-Thr
+KT985987.1	Genbank	exon	2776	2838	.	-	.	ID=exon-trnT(tgt)-1;Parent=rna-trnT(tgt);gbkey=tRNA;gene=trnT(tgt);product=tRNA-Thr
+KT985987.1	Genbank	gene	2841	3119	.	+	.	ID=gene-nad4l;Name=nad4l;gbkey=Gene;gene=nad4l;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	2841	3119	.	+	0	ID=cds-ANJ04204.1;Parent=gene-nad4l;Dbxref=NCBI_GP:ANJ04204.1;Name=ANJ04204.1;gbkey=CDS;gene=nad4l;product=NADH dehydrogenase subunit 4L;protein_id=ANJ04204.1;transl_table=5
+KT985987.1	Genbank	gene	3188	4462	.	+	.	ID=gene-nad4;Name=nad4;gbkey=Gene;gene=nad4;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	3188	4462	.	+	0	ID=cds-ANJ04205.1;Parent=gene-nad4;Dbxref=NCBI_GP:ANJ04205.1;Name=ANJ04205.1;gbkey=CDS;gene=nad4;product=NADH dehydrogenase subunit 4;protein_id=ANJ04205.1;transl_table=5
+KT985987.1	Genbank	gene	4462	4543	.	+	.	ID=gene-trnH(gtg);Name=trnH(gtg);gbkey=Gene;gene=trnH(gtg);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	4462	4543	.	+	.	ID=rna-trnH(gtg);Parent=gene-trnH(gtg);gbkey=tRNA;gene=trnH(gtg);product=tRNA-His
+KT985987.1	Genbank	exon	4462	4543	.	+	.	ID=exon-trnH(gtg)-1;Parent=rna-trnH(gtg);gbkey=tRNA;gene=trnH(gtg);product=tRNA-His
+KT985987.1	Genbank	gene	4574	6233	.	+	.	ID=gene-nad5;Name=nad5;gbkey=Gene;gene=nad5;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	4574	6233	.	+	0	ID=cds-ANJ04206.1;Parent=gene-nad5;Dbxref=NCBI_GP:ANJ04206.1;Name=ANJ04206.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=nad5;product=NADH dehydrogenase subunit 5;protein_id=ANJ04206.1;transl_except=(pos:6233..6233%2Caa:TERM);transl_table=5
+KT985987.1	Genbank	gene	6234	6298	.	+	.	ID=gene-trnF(gaa);Name=trnF(gaa);gbkey=Gene;gene=trnF(gaa);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	6234	6298	.	+	.	ID=rna-trnF(gaa);Parent=gene-trnF(gaa);gbkey=tRNA;gene=trnF(gaa);product=tRNA-Phe
+KT985987.1	Genbank	exon	6234	6298	.	+	.	ID=exon-trnF(gaa)-1;Parent=rna-trnF(gaa);gbkey=tRNA;gene=trnF(gaa);product=tRNA-Phe
+KT985987.1	Genbank	gene	6298	6361	.	-	.	ID=gene-trnE(ttc);Name=trnE(ttc);gbkey=Gene;gene=trnE(ttc);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	6298	6361	.	-	.	ID=rna-trnE(ttc);Parent=gene-trnE(ttc);gbkey=tRNA;gene=trnE(ttc);product=tRNA-Glu
+KT985987.1	Genbank	exon	6298	6361	.	-	.	ID=exon-trnE(ttc)-1;Parent=rna-trnE(ttc);gbkey=tRNA;gene=trnE(ttc);product=tRNA-Glu
+KT985987.1	Genbank	gene	6368	6433	.	-	.	ID=gene-trnS1(gct);Name=trnS1(gct);gbkey=Gene;gene=trnS1(gct);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	6368	6433	.	-	.	ID=rna-trnS1(gct);Parent=gene-trnS1(gct);Note=tRNA-SER1;gbkey=tRNA;gene=trnS1(gct);product=tRNA-Ser
+KT985987.1	Genbank	exon	6368	6433	.	-	.	ID=exon-trnS1(gct)-1;Parent=rna-trnS1(gct);Note=tRNA-SER1;gbkey=tRNA;gene=trnS1(gct);product=tRNA-Ser
+KT985987.1	Genbank	gene	6434	6498	.	-	.	ID=gene-trnN(gtt);Name=trnN(gtt);gbkey=Gene;gene=trnN(gtt);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	6434	6498	.	-	.	ID=rna-trnN(gtt);Parent=gene-trnN(gtt);gbkey=tRNA;gene=trnN(gtt);product=tRNA-Asn
+KT985987.1	Genbank	exon	6434	6498	.	-	.	ID=exon-trnN(gtt)-1;Parent=rna-trnN(gtt);gbkey=tRNA;gene=trnN(gtt);product=tRNA-Asn
+KT985987.1	Genbank	gene	6497	6559	.	-	.	ID=gene-trnR(tcg);Name=trnR(tcg);gbkey=Gene;gene=trnR(tcg);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	6497	6559	.	-	.	ID=rna-trnR(tcg);Parent=gene-trnR(tcg);gbkey=tRNA;gene=trnR(tcg);product=tRNA-Arg
+KT985987.1	Genbank	exon	6497	6559	.	-	.	ID=exon-trnR(tcg)-1;Parent=rna-trnR(tcg);gbkey=tRNA;gene=trnR(tcg);product=tRNA-Arg
+KT985987.1	Genbank	gene	6560	6621	.	-	.	ID=gene-trnA(tgc);Name=trnA(tgc);gbkey=Gene;gene=trnA(tgc);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	6560	6621	.	-	.	ID=rna-trnA(tgc);Parent=gene-trnA(tgc);gbkey=tRNA;gene=trnA(tgc);product=tRNA-Ala
+KT985987.1	Genbank	exon	6560	6621	.	-	.	ID=exon-trnA(tgc)-1;Parent=rna-trnA(tgc);gbkey=tRNA;gene=trnA(tgc);product=tRNA-Ala
+KT985987.1	Genbank	gene	6620	6964	.	-	.	ID=gene-nad3;Name=nad3;gbkey=Gene;gene=nad3;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	6620	6964	.	-	0	ID=cds-ANJ04207.1;Parent=gene-nad3;Dbxref=NCBI_GP:ANJ04207.1;Name=ANJ04207.1;gbkey=CDS;gene=nad3;product=NADH dehydrogenase subunit 3;protein_id=ANJ04207.1;transl_table=5
+KT985987.1	Genbank	gene	6965	7027	.	-	.	ID=gene-trnG(tcc);Name=trnG(tcc);gbkey=Gene;gene=trnG(tcc);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	6965	7027	.	-	.	ID=rna-trnG(tcc);Parent=gene-trnG(tcc);gbkey=tRNA;gene=trnG(tcc);product=tRNA-Gly
+KT985987.1	Genbank	exon	6965	7027	.	-	.	ID=exon-trnG(tcc)-1;Parent=rna-trnG(tcc);gbkey=tRNA;gene=trnG(tcc);product=tRNA-Gly
+KT985987.1	Genbank	gene	7028	7811	.	-	.	ID=gene-cox3;Name=cox3;gbkey=Gene;gene=cox3;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	7028	7811	.	-	0	ID=cds-ANJ04208.1;Parent=gene-cox3;Dbxref=NCBI_GP:ANJ04208.1;Name=ANJ04208.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=cox3;product=cytochrome c oxidase subunit 3;protein_id=ANJ04208.1;transl_except=(pos:complement(7028..7028)%2Caa:TERM);transl_table=5
+KT985987.1	Genbank	gene	7814	8494	.	-	.	ID=gene-atp6;Name=atp6;gbkey=Gene;gene=atp6;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	7814	8494	.	-	0	ID=cds-ANJ04209.1;Parent=gene-atp6;Dbxref=NCBI_GP:ANJ04209.1;Name=ANJ04209.1;gbkey=CDS;gene=atp6;product=ATP synthase F0 subunit 6;protein_id=ANJ04209.1;transl_table=5
+KT985987.1	Genbank	gene	8488	8655	.	-	.	ID=gene-atp8;Name=atp8;gbkey=Gene;gene=atp8;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	8488	8655	.	-	0	ID=cds-ANJ04210.1;Parent=gene-atp8;Dbxref=NCBI_GP:ANJ04210.1;Name=ANJ04210.1;gbkey=CDS;gene=atp8;product=ATP synthase F0 subunit 8;protein_id=ANJ04210.1;transl_table=5
+KT985987.1	Genbank	gene	8656	8719	.	-	.	ID=gene-trnD(gtc);Name=trnD(gtc);gbkey=Gene;gene=trnD(gtc);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	8656	8719	.	-	.	ID=rna-trnD(gtc);Parent=gene-trnD(gtc);gbkey=tRNA;gene=trnD(gtc);product=tRNA-Asp
+KT985987.1	Genbank	exon	8656	8719	.	-	.	ID=exon-trnD(gtc)-1;Parent=rna-trnD(gtc);gbkey=tRNA;gene=trnD(gtc);product=tRNA-Asp
+KT985987.1	Genbank	gene	8719	8789	.	-	.	ID=gene-trnK(ctt);Name=trnK(ctt);gbkey=Gene;gene=trnK(ctt);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	8719	8789	.	-	.	ID=rna-trnK(ctt);Parent=gene-trnK(ctt);gbkey=tRNA;gene=trnK(ctt);product=tRNA-Lys
+KT985987.1	Genbank	exon	8719	8789	.	-	.	ID=exon-trnK(ctt)-1;Parent=rna-trnK(ctt);gbkey=tRNA;gene=trnK(ctt);product=tRNA-Lys
+KT985987.1	Genbank	gene	8791	9477	.	-	.	ID=gene-cox2;Name=cox2;gbkey=Gene;gene=cox2;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	8791	9477	.	-	0	ID=cds-ANJ04211.1;Parent=gene-cox2;Dbxref=NCBI_GP:ANJ04211.1;Name=ANJ04211.1;gbkey=CDS;gene=cox2;product=cytochrome c oxidase subunit 2;protein_id=ANJ04211.1;transl_table=5
+KT985987.1	Genbank	gene	9478	9540	.	-	.	ID=gene-trnL2(taa);Name=trnL2(taa);gbkey=Gene;gene=trnL2(taa);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	9478	9540	.	-	.	ID=rna-trnL2(taa);Parent=gene-trnL2(taa);Note=tRNA-LEU2;gbkey=tRNA;gene=trnL2(taa);product=tRNA-Leu
+KT985987.1	Genbank	exon	9478	9540	.	-	.	ID=exon-trnL2(taa)-1;Parent=rna-trnL2(taa);Note=tRNA-LEU2;gbkey=tRNA;gene=trnL2(taa);product=tRNA-Leu
+KT985987.1	Genbank	gene	9541	11074	.	-	.	ID=gene-cox1;Name=cox1;gbkey=Gene;gene=cox1;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	9541	11074	.	-	0	ID=cds-ANJ04212.1;Parent=gene-cox1;Dbxref=NCBI_GP:ANJ04212.1;Name=ANJ04212.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=cox1;product=cytochrome c oxidase subunit 1;protein_id=ANJ04212.1;transl_except=(pos:complement(9541..9541)%2Caa:TERM);transl_table=5
+KT985987.1	Genbank	gene	11078	11143	.	+	.	ID=gene-trnY(gta);Name=trnY(gta);gbkey=Gene;gene=trnY(gta);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	11078	11143	.	+	.	ID=rna-trnY(gta);Parent=gene-trnY(gta);gbkey=tRNA;gene=trnY(gta);product=tRNA-Tyr
+KT985987.1	Genbank	exon	11078	11143	.	+	.	ID=exon-trnY(gta)-1;Parent=rna-trnY(gta);gbkey=tRNA;gene=trnY(gta);product=tRNA-Tyr
+KT985987.1	Genbank	gene	11145	11206	.	+	.	ID=gene-trnC(gca);Name=trnC(gca);gbkey=Gene;gene=trnC(gca);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	11145	11206	.	+	.	ID=rna-trnC(gca);Parent=gene-trnC(gca);gbkey=tRNA;gene=trnC(gca);product=tRNA-Cys
+KT985987.1	Genbank	exon	11145	11206	.	+	.	ID=exon-trnC(gca)-1;Parent=rna-trnC(gca);gbkey=tRNA;gene=trnC(gca);product=tRNA-Cys
+KT985987.1	Genbank	gene	11206	11273	.	-	.	ID=gene-trnW(tca);Name=trnW(tca);gbkey=Gene;gene=trnW(tca);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	11206	11273	.	-	.	ID=rna-trnW(tca);Parent=gene-trnW(tca);gbkey=tRNA;gene=trnW(tca);product=tRNA-Trp
+KT985987.1	Genbank	exon	11206	11273	.	-	.	ID=exon-trnW(tca)-1;Parent=rna-trnW(tca);gbkey=tRNA;gene=trnW(tca);product=tRNA-Trp
+KT985987.1	Genbank	gene	11272	12243	.	-	.	ID=gene-nad2;Name=nad2;gbkey=Gene;gene=nad2;gene_biotype=protein_coding
+KT985987.1	Genbank	CDS	11272	12243	.	-	0	ID=cds-ANJ04213.1;Parent=gene-nad2;Dbxref=NCBI_GP:ANJ04213.1;Name=ANJ04213.1;gbkey=CDS;gene=nad2;product=NADH dehydrogenase subunit 2;protein_id=ANJ04213.1;transl_table=5
+KT985987.1	Genbank	gene	12265	12332	.	-	.	ID=gene-trnM(cat);Name=trnM(cat);gbkey=Gene;gene=trnM(cat);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	12265	12332	.	-	.	ID=rna-trnM(cat);Parent=gene-trnM(cat);gbkey=tRNA;gene=trnM(cat);product=tRNA-Met
+KT985987.1	Genbank	exon	12265	12332	.	-	.	ID=exon-trnM(cat)-1;Parent=rna-trnM(cat);gbkey=tRNA;gene=trnM(cat);product=tRNA-Met
+KT985987.1	Genbank	gene	12338	12405	.	+	.	ID=gene-trnQ(ttg);Name=trnQ(ttg);gbkey=Gene;gene=trnQ(ttg);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	12338	12405	.	+	.	ID=rna-trnQ(ttg);Parent=gene-trnQ(ttg);gbkey=tRNA;gene=trnQ(ttg);product=tRNA-Gln
+KT985987.1	Genbank	exon	12338	12405	.	+	.	ID=exon-trnQ(ttg)-1;Parent=rna-trnQ(ttg);gbkey=tRNA;gene=trnQ(ttg);product=tRNA-Gln
+KT985987.1	Genbank	gene	12405	12468	.	-	.	ID=gene-trnI(gat);Name=trnI(gat);gbkey=Gene;gene=trnI(gat);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	12405	12468	.	-	.	ID=rna-trnI(gat);Parent=gene-trnI(gat);gbkey=tRNA;gene=trnI(gat);product=tRNA-Ile
+KT985987.1	Genbank	exon	12405	12468	.	-	.	ID=exon-trnI(gat)-1;Parent=rna-trnI(gat);gbkey=tRNA;gene=trnI(gat);product=tRNA-Ile
+KT985987.1	Genbank	rRNA	13703	14462	.	+	.	ID=rna-KT985987.1:13703..14462;gbkey=rRNA;product=12S ribosomal RNA
+KT985987.1	Genbank	exon	13703	14462	.	+	.	ID=exon-KT985987.1:13703..14462-1;Parent=rna-KT985987.1:13703..14462;gbkey=rRNA;product=12S ribosomal RNA
+KT985987.1	Genbank	gene	14458	14523	.	+	.	ID=gene-trnV(tac);Name=trnV(tac);gbkey=Gene;gene=trnV(tac);gene_biotype=tRNA
+KT985987.1	Genbank	tRNA	14458	14523	.	+	.	ID=rna-trnV(tac);Parent=gene-trnV(tac);gbkey=tRNA;gene=trnV(tac);product=tRNA-Val
+KT985987.1	Genbank	exon	14458	14523	.	+	.	ID=exon-trnV(tac)-1;Parent=rna-trnV(tac);gbkey=tRNA;gene=trnV(tac);product=tRNA-Val
+KT985987.1	Genbank	rRNA	14633	15712	.	+	.	ID=rna-KT985987.1:14633..15712;gbkey=rRNA;product=16S ribosomal RNA
+KT985987.1	Genbank	exon	14633	15712	.	+	.	ID=exon-KT985987.1:14633..15712-1;Parent=rna-KT985987.1:14633..15712;gbkey=rRNA;product=16S ribosomal RNA
+
+##sequence-region MW238521.1 1 15485
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2778773
+MW238521.1	Genbank	region	1	15485	.	+	.	ID=MW238521.1:1..15485;Dbxref=taxon:2778773;Is_circular=true;Name=MT;bio-material=Total body;country=Antarctica: Cape Hallett;gbkey=Src;genome=mitochondrion;mol_type=genomic DNA
+MW238521.1	Genbank	tRNA	1	66	.	+	.	ID=rna-MW238521.1:1..66;gbkey=tRNA;product=tRNA-Ile
+MW238521.1	Genbank	exon	1	66	.	+	.	ID=exon-MW238521.1:1..66-1;Parent=rna-MW238521.1:1..66;gbkey=tRNA;product=tRNA-Ile
+MW238521.1	Genbank	tRNA	66	133	.	-	.	ID=rna-MW238521.1:66..133;gbkey=tRNA;product=tRNA-Gln
+MW238521.1	Genbank	exon	66	133	.	-	.	ID=exon-MW238521.1:66..133-1;Parent=rna-MW238521.1:66..133;gbkey=tRNA;product=tRNA-Gln
+MW238521.1	Genbank	tRNA	133	201	.	+	.	ID=rna-MW238521.1:133..201;gbkey=tRNA;product=tRNA-Met
+MW238521.1	Genbank	exon	133	201	.	+	.	ID=exon-MW238521.1:133..201-1;Parent=rna-MW238521.1:133..201;gbkey=tRNA;product=tRNA-Met
+MW238521.1	Genbank	gene	203	1198	.	+	.	ID=gene-ND2-3;Name=ND2;gbkey=Gene;gene=ND2;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	203	1198	.	+	0	ID=cds-QQK54731.1;Parent=gene-ND2-3;Dbxref=NCBI_GP:QQK54731.1;Name=QQK54731.1;gbkey=CDS;gene=ND2;product=NADH dehydrogenase subunit 2;protein_id=QQK54731.1;transl_table=5
+MW238521.1	Genbank	tRNA	1198	1264	.	+	.	ID=rna-MW238521.1:1198..1264;gbkey=tRNA;product=tRNA-Trp
+MW238521.1	Genbank	exon	1198	1264	.	+	.	ID=exon-MW238521.1:1198..1264-1;Parent=rna-MW238521.1:1198..1264;gbkey=tRNA;product=tRNA-Trp
+MW238521.1	Genbank	tRNA	1269	1329	.	-	.	ID=rna-MW238521.1:1269..1329;gbkey=tRNA;product=tRNA-Cys
+MW238521.1	Genbank	exon	1269	1329	.	-	.	ID=exon-MW238521.1:1269..1329-1;Parent=rna-MW238521.1:1269..1329;gbkey=tRNA;product=tRNA-Cys
+MW238521.1	Genbank	tRNA	1330	1391	.	-	.	ID=rna-MW238521.1:1330..1391;gbkey=tRNA;product=tRNA-Tyr
+MW238521.1	Genbank	exon	1330	1391	.	-	.	ID=exon-MW238521.1:1330..1391-1;Parent=rna-MW238521.1:1330..1391;gbkey=tRNA;product=tRNA-Tyr
+MW238521.1	Genbank	gene	1392	2925	.	+	.	ID=gene-COX1-3;Name=COX1;gbkey=Gene;gene=COX1;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	1392	2925	.	+	0	ID=cds-QQK54732.1;Parent=gene-COX1-3;Dbxref=NCBI_GP:QQK54732.1;Name=QQK54732.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX1;product=cytochrome c oxidase subunit I;protein_id=QQK54732.1;transl_except=(pos:2925..2925%2Caa:TERM);transl_table=5
+MW238521.1	Genbank	tRNA	2926	2990	.	+	.	ID=rna-MW238521.1:2926..2990;gbkey=tRNA;product=tRNA-Leu
+MW238521.1	Genbank	exon	2926	2990	.	+	.	ID=exon-MW238521.1:2926..2990-1;Parent=rna-MW238521.1:2926..2990;gbkey=tRNA;product=tRNA-Leu
+MW238521.1	Genbank	gene	2991	3675	.	+	.	ID=gene-COX2-3;Name=COX2;gbkey=Gene;gene=COX2;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	2991	3675	.	+	0	ID=cds-QQK54733.1;Parent=gene-COX2-3;Dbxref=NCBI_GP:QQK54733.1;Name=QQK54733.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX2;product=cytochrome c oxidase subunit II;protein_id=QQK54733.1;transl_except=(pos:3675..3675%2Caa:TERM);transl_table=5
+MW238521.1	Genbank	tRNA	3676	3746	.	+	.	ID=rna-MW238521.1:3676..3746;gbkey=tRNA;product=tRNA-Lys
+MW238521.1	Genbank	exon	3676	3746	.	+	.	ID=exon-MW238521.1:3676..3746-1;Parent=rna-MW238521.1:3676..3746;gbkey=tRNA;product=tRNA-Lys
+MW238521.1	Genbank	tRNA	3746	3807	.	+	.	ID=rna-MW238521.1:3746..3807;gbkey=tRNA;product=tRNA-Asp
+MW238521.1	Genbank	exon	3746	3807	.	+	.	ID=exon-MW238521.1:3746..3807-1;Parent=rna-MW238521.1:3746..3807;gbkey=tRNA;product=tRNA-Asp
+MW238521.1	Genbank	gene	3808	3969	.	+	.	ID=gene-ATP8-3;Name=ATP8;gbkey=Gene;gene=ATP8;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	3808	3969	.	+	0	ID=cds-QQK54734.1;Parent=gene-ATP8-3;Dbxref=NCBI_GP:QQK54734.1;Name=QQK54734.1;gbkey=CDS;gene=ATP8;product=ATP synthase F0 subunit 8;protein_id=QQK54734.1;transl_table=5
+MW238521.1	Genbank	gene	3963	4643	.	+	.	ID=gene-ATP6-3;Name=ATP6;gbkey=Gene;gene=ATP6;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	3963	4643	.	+	0	ID=cds-QQK54735.1;Parent=gene-ATP6-3;Dbxref=NCBI_GP:QQK54735.1;Name=QQK54735.1;gbkey=CDS;gene=ATP6;product=ATP synthase F0 subunit 6;protein_id=QQK54735.1;transl_table=5
+MW238521.1	Genbank	gene	4646	5429	.	+	.	ID=gene-COX3-3;Name=COX3;gbkey=Gene;gene=COX3;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	4646	5429	.	+	0	ID=cds-QQK54736.1;Parent=gene-COX3-3;Dbxref=NCBI_GP:QQK54736.1;Name=QQK54736.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX3;product=cytochrome c oxidase subunit III;protein_id=QQK54736.1;transl_except=(pos:5429..5429%2Caa:TERM);transl_table=5
+MW238521.1	Genbank	tRNA	5430	5491	.	+	.	ID=rna-MW238521.1:5430..5491;gbkey=tRNA;product=tRNA-Gly
+MW238521.1	Genbank	exon	5430	5491	.	+	.	ID=exon-MW238521.1:5430..5491-1;Parent=rna-MW238521.1:5430..5491;gbkey=tRNA;product=tRNA-Gly
+MW238521.1	Genbank	gene	5492	5836	.	+	.	ID=gene-ND3-3;Name=ND3;gbkey=Gene;gene=ND3;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	5492	5836	.	+	0	ID=cds-QQK54737.1;Parent=gene-ND3-3;Dbxref=NCBI_GP:QQK54737.1;Name=QQK54737.1;gbkey=CDS;gene=ND3;product=NADH dehydrogenase subunit 3;protein_id=QQK54737.1;transl_table=5
+MW238521.1	Genbank	tRNA	5835	5898	.	+	.	ID=rna-MW238521.1:5835..5898;gbkey=tRNA;product=tRNA-Ala
+MW238521.1	Genbank	exon	5835	5898	.	+	.	ID=exon-MW238521.1:5835..5898-1;Parent=rna-MW238521.1:5835..5898;gbkey=tRNA;product=tRNA-Ala
+MW238521.1	Genbank	tRNA	5898	5958	.	+	.	ID=rna-MW238521.1:5898..5958;gbkey=tRNA;product=tRNA-Arg
+MW238521.1	Genbank	exon	5898	5958	.	+	.	ID=exon-MW238521.1:5898..5958-1;Parent=rna-MW238521.1:5898..5958;gbkey=tRNA;product=tRNA-Arg
+MW238521.1	Genbank	tRNA	5957	6020	.	+	.	ID=rna-MW238521.1:5957..6020;gbkey=tRNA;product=tRNA-Asn
+MW238521.1	Genbank	exon	5957	6020	.	+	.	ID=exon-MW238521.1:5957..6020-1;Parent=rna-MW238521.1:5957..6020;gbkey=tRNA;product=tRNA-Asn
+MW238521.1	Genbank	tRNA	6019	6085	.	+	.	ID=rna-MW238521.1:6019..6085;gbkey=tRNA;product=tRNA-Ser
+MW238521.1	Genbank	exon	6019	6085	.	+	.	ID=exon-MW238521.1:6019..6085-1;Parent=rna-MW238521.1:6019..6085;gbkey=tRNA;product=tRNA-Ser
+MW238521.1	Genbank	tRNA	6087	6150	.	+	.	ID=rna-MW238521.1:6087..6150;gbkey=tRNA;product=tRNA-Glu
+MW238521.1	Genbank	exon	6087	6150	.	+	.	ID=exon-MW238521.1:6087..6150-1;Parent=rna-MW238521.1:6087..6150;gbkey=tRNA;product=tRNA-Glu
+MW238521.1	Genbank	tRNA	6152	6215	.	-	.	ID=rna-MW238521.1:6152..6215;gbkey=tRNA;product=tRNA-Phe
+MW238521.1	Genbank	exon	6152	6215	.	-	.	ID=exon-MW238521.1:6152..6215-1;Parent=rna-MW238521.1:6152..6215;gbkey=tRNA;product=tRNA-Phe
+MW238521.1	Genbank	gene	6216	7917	.	-	.	ID=gene-ND5-3;Name=ND5;gbkey=Gene;gene=ND5;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	6216	7917	.	-	0	ID=cds-QQK54738.1;Parent=gene-ND5-3;Dbxref=NCBI_GP:QQK54738.1;Name=QQK54738.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=ND5;product=NADH dehydrogenase subunit 5;protein_id=QQK54738.1;transl_except=(pos:complement(6216..6216)%2Caa:TERM);transl_table=5
+MW238521.1	Genbank	tRNA	7918	7979	.	-	.	ID=rna-MW238521.1:7918..7979;gbkey=tRNA;product=tRNA-His
+MW238521.1	Genbank	exon	7918	7979	.	-	.	ID=exon-MW238521.1:7918..7979-1;Parent=rna-MW238521.1:7918..7979;gbkey=tRNA;product=tRNA-His
+MW238521.1	Genbank	gene	7980	9341	.	-	.	ID=gene-ND4-3;Name=ND4;gbkey=Gene;gene=ND4;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	7980	9341	.	-	0	ID=cds-QQK54739.1;Parent=gene-ND4-3;Dbxref=NCBI_GP:QQK54739.1;Name=QQK54739.1;gbkey=CDS;gene=ND4;product=NADH dehydrogenase subunit 4;protein_id=QQK54739.1;transl_table=5
+MW238521.1	Genbank	gene	9341	9619	.	-	.	ID=gene-ND4L-3;Name=ND4L;gbkey=Gene;gene=ND4L;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	9341	9619	.	-	0	ID=cds-QQK54740.1;Parent=gene-ND4L-3;Dbxref=NCBI_GP:QQK54740.1;Name=QQK54740.1;gbkey=CDS;gene=ND4L;product=NADH dehydrogenase subunit 4L;protein_id=QQK54740.1;transl_table=5
+MW238521.1	Genbank	tRNA	9622	9683	.	+	.	ID=rna-MW238521.1:9622..9683;gbkey=tRNA;product=tRNA-Thr
+MW238521.1	Genbank	exon	9622	9683	.	+	.	ID=exon-MW238521.1:9622..9683-1;Parent=rna-MW238521.1:9622..9683;gbkey=tRNA;product=tRNA-Thr
+MW238521.1	Genbank	tRNA	9684	9744	.	-	.	ID=rna-MW238521.1:9684..9744;gbkey=tRNA;product=tRNA-Pro
+MW238521.1	Genbank	exon	9684	9744	.	-	.	ID=exon-MW238521.1:9684..9744-1;Parent=rna-MW238521.1:9684..9744;gbkey=tRNA;product=tRNA-Pro
+MW238521.1	Genbank	gene	9750	10238	.	+	.	ID=gene-ND6-3;Name=ND6;gbkey=Gene;gene=ND6;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	9750	10238	.	+	0	ID=cds-QQK54741.1;Parent=gene-ND6-3;Dbxref=NCBI_GP:QQK54741.1;Name=QQK54741.1;gbkey=CDS;gene=ND6;product=NADH dehydrogenase subunit 6;protein_id=QQK54741.1;transl_table=5
+MW238521.1	Genbank	gene	10238	11371	.	+	.	ID=gene-CYTB-3;Name=CYTB;gbkey=Gene;gene=CYTB;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	10238	11371	.	+	0	ID=cds-QQK54742.1;Parent=gene-CYTB-3;Dbxref=NCBI_GP:QQK54742.1;Name=QQK54742.1;gbkey=CDS;gene=CYTB;product=cytochrome b;protein_id=QQK54742.1;transl_table=5
+MW238521.1	Genbank	tRNA	11371	11441	.	+	.	ID=rna-MW238521.1:11371..11441;gbkey=tRNA;product=tRNA-Ser
+MW238521.1	Genbank	exon	11371	11441	.	+	.	ID=exon-MW238521.1:11371..11441-1;Parent=rna-MW238521.1:11371..11441;gbkey=tRNA;product=tRNA-Ser
+MW238521.1	Genbank	gene	12034	12975	.	-	.	ID=gene-ND1-3;Name=ND1;gbkey=Gene;gene=ND1;gene_biotype=protein_coding
+MW238521.1	Genbank	CDS	12034	12975	.	-	0	ID=cds-QQK54743.1;Parent=gene-ND1-3;Dbxref=NCBI_GP:QQK54743.1;Name=QQK54743.1;gbkey=CDS;gene=ND1;product=NADH dehydrogenase subunit 1;protein_id=QQK54743.1;transl_table=5
+MW238521.1	Genbank	tRNA	12979	13041	.	-	.	ID=rna-MW238521.1:12979..13041;gbkey=tRNA;product=tRNA-Leu
+MW238521.1	Genbank	exon	12979	13041	.	-	.	ID=exon-MW238521.1:12979..13041-1;Parent=rna-MW238521.1:12979..13041;gbkey=tRNA;product=tRNA-Leu
+MW238521.1	Genbank	rRNA	13042	14256	.	-	.	ID=rna-MW238521.1:13042..14256;gbkey=rRNA;product=16S ribosomal RNA
+MW238521.1	Genbank	exon	13042	14256	.	-	.	ID=exon-MW238521.1:13042..14256-1;Parent=rna-MW238521.1:13042..14256;gbkey=rRNA;product=16S ribosomal RNA
+MW238521.1	Genbank	tRNA	14257	14319	.	-	.	ID=rna-MW238521.1:14257..14319;gbkey=tRNA;product=tRNA-Val
+MW238521.1	Genbank	exon	14257	14319	.	-	.	ID=exon-MW238521.1:14257..14319-1;Parent=rna-MW238521.1:14257..14319;gbkey=tRNA;product=tRNA-Val
+MW238521.1	Genbank	rRNA	14316	15011	.	-	.	ID=rna-MW238521.1:14316..15011;gbkey=rRNA;product=12S ribosomal RNA
+MW238521.1	Genbank	exon	14316	15011	.	-	.	ID=exon-MW238521.1:14316..15011-1;Parent=rna-MW238521.1:14316..15011;gbkey=rRNA;product=12S ribosomal RNA
+MW238521.1	Genbank	sequence_feature	15012	15485	.	+	.	ID=id-MW238521.1:15012..15485;Note=putuative A+T rich region%3B control region;gbkey=misc_feature
+

@@ -1,0 +1,106 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region NC_056909.1 1 15485
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2778773
+NC_056909.1	RefSeq	region	1	15485	.	+	.	ID=NC_056909.1:1..15485;Dbxref=taxon:2778773;Is_circular=true;Name=MT;bio-material=Total body;country=Antarctica: Cape Hallett;gbkey=Src;genome=mitochondrion;mol_type=genomic DNA
+NC_056909.1	RefSeq	gene	1	66	.	+	.	ID=gene-KYW23_mgt01;Dbxref=GeneID:67132848;Name=KYW23_mgt01;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt01
+NC_056909.1	RefSeq	tRNA	1	66	.	+	.	ID=rna-KYW23_mgt01;Parent=gene-KYW23_mgt01;Dbxref=GeneID:67132848;gbkey=tRNA;locus_tag=KYW23_mgt01;product=tRNA-Ile
+NC_056909.1	RefSeq	exon	1	66	.	+	.	ID=exon-KYW23_mgt01-1;Parent=rna-KYW23_mgt01;Dbxref=GeneID:67132848;gbkey=tRNA;locus_tag=KYW23_mgt01;product=tRNA-Ile
+NC_056909.1	RefSeq	gene	66	133	.	-	.	ID=gene-KYW23_mgt02;Dbxref=GeneID:67132825;Name=KYW23_mgt02;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt02
+NC_056909.1	RefSeq	tRNA	66	133	.	-	.	ID=rna-KYW23_mgt02;Parent=gene-KYW23_mgt02;Dbxref=GeneID:67132825;gbkey=tRNA;locus_tag=KYW23_mgt02;product=tRNA-Gln
+NC_056909.1	RefSeq	exon	66	133	.	-	.	ID=exon-KYW23_mgt02-1;Parent=rna-KYW23_mgt02;Dbxref=GeneID:67132825;gbkey=tRNA;locus_tag=KYW23_mgt02;product=tRNA-Gln
+NC_056909.1	RefSeq	gene	133	201	.	+	.	ID=gene-KYW23_mgt03;Dbxref=GeneID:67132826;Name=KYW23_mgt03;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt03
+NC_056909.1	RefSeq	tRNA	133	201	.	+	.	ID=rna-KYW23_mgt03;Parent=gene-KYW23_mgt03;Dbxref=GeneID:67132826;gbkey=tRNA;locus_tag=KYW23_mgt03;product=tRNA-Met
+NC_056909.1	RefSeq	exon	133	201	.	+	.	ID=exon-KYW23_mgt03-1;Parent=rna-KYW23_mgt03;Dbxref=GeneID:67132826;gbkey=tRNA;locus_tag=KYW23_mgt03;product=tRNA-Met
+NC_056909.1	RefSeq	gene	203	1198	.	+	.	ID=gene-KYW23_mgp13;Dbxref=GeneID:67132827;Name=ND2;gbkey=Gene;gene=ND2;gene_biotype=protein_coding;locus_tag=KYW23_mgp13
+NC_056909.1	RefSeq	CDS	203	1198	.	+	0	ID=cds-YP_010139277.1;Parent=gene-KYW23_mgp13;Dbxref=GenBank:YP_010139277.1,GeneID:67132827;Name=YP_010139277.1;gbkey=CDS;gene=ND2;locus_tag=KYW23_mgp13;product=NADH dehydrogenase subunit 2;protein_id=YP_010139277.1;transl_table=5
+NC_056909.1	RefSeq	gene	1198	1264	.	+	.	ID=gene-KYW23_mgt04;Dbxref=GeneID:67132812;Name=KYW23_mgt04;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt04
+NC_056909.1	RefSeq	tRNA	1198	1264	.	+	.	ID=rna-KYW23_mgt04;Parent=gene-KYW23_mgt04;Dbxref=GeneID:67132812;gbkey=tRNA;locus_tag=KYW23_mgt04;product=tRNA-Trp
+NC_056909.1	RefSeq	exon	1198	1264	.	+	.	ID=exon-KYW23_mgt04-1;Parent=rna-KYW23_mgt04;Dbxref=GeneID:67132812;gbkey=tRNA;locus_tag=KYW23_mgt04;product=tRNA-Trp
+NC_056909.1	RefSeq	gene	1269	1329	.	-	.	ID=gene-KYW23_mgt05;Dbxref=GeneID:67132828;Name=KYW23_mgt05;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt05
+NC_056909.1	RefSeq	tRNA	1269	1329	.	-	.	ID=rna-KYW23_mgt05;Parent=gene-KYW23_mgt05;Dbxref=GeneID:67132828;gbkey=tRNA;locus_tag=KYW23_mgt05;product=tRNA-Cys
+NC_056909.1	RefSeq	exon	1269	1329	.	-	.	ID=exon-KYW23_mgt05-1;Parent=rna-KYW23_mgt05;Dbxref=GeneID:67132828;gbkey=tRNA;locus_tag=KYW23_mgt05;product=tRNA-Cys
+NC_056909.1	RefSeq	gene	1330	1391	.	-	.	ID=gene-KYW23_mgt06;Dbxref=GeneID:67132829;Name=KYW23_mgt06;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt06
+NC_056909.1	RefSeq	tRNA	1330	1391	.	-	.	ID=rna-KYW23_mgt06;Parent=gene-KYW23_mgt06;Dbxref=GeneID:67132829;gbkey=tRNA;locus_tag=KYW23_mgt06;product=tRNA-Tyr
+NC_056909.1	RefSeq	exon	1330	1391	.	-	.	ID=exon-KYW23_mgt06-1;Parent=rna-KYW23_mgt06;Dbxref=GeneID:67132829;gbkey=tRNA;locus_tag=KYW23_mgt06;product=tRNA-Tyr
+NC_056909.1	RefSeq	gene	1392	2925	.	+	.	ID=gene-KYW23_mgp12;Dbxref=GeneID:67132830;Name=COX1;gbkey=Gene;gene=COX1;gene_biotype=protein_coding;locus_tag=KYW23_mgp12
+NC_056909.1	RefSeq	CDS	1392	2925	.	+	0	ID=cds-YP_010139278.1;Parent=gene-KYW23_mgp12;Dbxref=GenBank:YP_010139278.1,GeneID:67132830;Name=YP_010139278.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX1;locus_tag=KYW23_mgp12;product=cytochrome c oxidase subunit I;protein_id=YP_010139278.1;transl_except=(pos:2925..2925%2Caa:TERM);transl_table=5
+NC_056909.1	RefSeq	gene	2926	2990	.	+	.	ID=gene-KYW23_mgt07;Dbxref=GeneID:67132813;Name=KYW23_mgt07;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt07
+NC_056909.1	RefSeq	tRNA	2926	2990	.	+	.	ID=rna-KYW23_mgt07;Parent=gene-KYW23_mgt07;Dbxref=GeneID:67132813;gbkey=tRNA;locus_tag=KYW23_mgt07;product=tRNA-Leu
+NC_056909.1	RefSeq	exon	2926	2990	.	+	.	ID=exon-KYW23_mgt07-1;Parent=rna-KYW23_mgt07;Dbxref=GeneID:67132813;gbkey=tRNA;locus_tag=KYW23_mgt07;product=tRNA-Leu
+NC_056909.1	RefSeq	gene	2991	3675	.	+	.	ID=gene-KYW23_mgp11;Dbxref=GeneID:67132831;Name=COX2;gbkey=Gene;gene=COX2;gene_biotype=protein_coding;locus_tag=KYW23_mgp11
+NC_056909.1	RefSeq	CDS	2991	3675	.	+	0	ID=cds-YP_010139279.1;Parent=gene-KYW23_mgp11;Dbxref=GenBank:YP_010139279.1,GeneID:67132831;Name=YP_010139279.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX2;locus_tag=KYW23_mgp11;product=cytochrome c oxidase subunit II;protein_id=YP_010139279.1;transl_except=(pos:3675..3675%2Caa:TERM);transl_table=5
+NC_056909.1	RefSeq	gene	3676	3746	.	+	.	ID=gene-KYW23_mgt08;Dbxref=GeneID:67132814;Name=KYW23_mgt08;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt08
+NC_056909.1	RefSeq	tRNA	3676	3746	.	+	.	ID=rna-KYW23_mgt08;Parent=gene-KYW23_mgt08;Dbxref=GeneID:67132814;gbkey=tRNA;locus_tag=KYW23_mgt08;product=tRNA-Lys
+NC_056909.1	RefSeq	exon	3676	3746	.	+	.	ID=exon-KYW23_mgt08-1;Parent=rna-KYW23_mgt08;Dbxref=GeneID:67132814;gbkey=tRNA;locus_tag=KYW23_mgt08;product=tRNA-Lys
+NC_056909.1	RefSeq	gene	3746	3807	.	+	.	ID=gene-KYW23_mgt09;Dbxref=GeneID:67132832;Name=KYW23_mgt09;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt09
+NC_056909.1	RefSeq	tRNA	3746	3807	.	+	.	ID=rna-KYW23_mgt09;Parent=gene-KYW23_mgt09;Dbxref=GeneID:67132832;gbkey=tRNA;locus_tag=KYW23_mgt09;product=tRNA-Asp
+NC_056909.1	RefSeq	exon	3746	3807	.	+	.	ID=exon-KYW23_mgt09-1;Parent=rna-KYW23_mgt09;Dbxref=GeneID:67132832;gbkey=tRNA;locus_tag=KYW23_mgt09;product=tRNA-Asp
+NC_056909.1	RefSeq	gene	3808	3969	.	+	.	ID=gene-KYW23_mgp10;Dbxref=GeneID:67132833;Name=ATP8;gbkey=Gene;gene=ATP8;gene_biotype=protein_coding;locus_tag=KYW23_mgp10
+NC_056909.1	RefSeq	CDS	3808	3969	.	+	0	ID=cds-YP_010139280.1;Parent=gene-KYW23_mgp10;Dbxref=GenBank:YP_010139280.1,GeneID:67132833;Name=YP_010139280.1;gbkey=CDS;gene=ATP8;locus_tag=KYW23_mgp10;product=ATP synthase F0 subunit 8;protein_id=YP_010139280.1;transl_table=5
+NC_056909.1	RefSeq	gene	3963	4643	.	+	.	ID=gene-KYW23_mgp09;Dbxref=GeneID:67132815;Name=ATP6;gbkey=Gene;gene=ATP6;gene_biotype=protein_coding;locus_tag=KYW23_mgp09
+NC_056909.1	RefSeq	CDS	3963	4643	.	+	0	ID=cds-YP_010139281.1;Parent=gene-KYW23_mgp09;Dbxref=GenBank:YP_010139281.1,GeneID:67132815;Name=YP_010139281.1;gbkey=CDS;gene=ATP6;locus_tag=KYW23_mgp09;product=ATP synthase F0 subunit 6;protein_id=YP_010139281.1;transl_table=5
+NC_056909.1	RefSeq	gene	4646	5429	.	+	.	ID=gene-KYW23_mgp08;Dbxref=GeneID:67132816;Name=COX3;gbkey=Gene;gene=COX3;gene_biotype=protein_coding;locus_tag=KYW23_mgp08
+NC_056909.1	RefSeq	CDS	4646	5429	.	+	0	ID=cds-YP_010139282.1;Parent=gene-KYW23_mgp08;Dbxref=GenBank:YP_010139282.1,GeneID:67132816;Name=YP_010139282.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=COX3;locus_tag=KYW23_mgp08;product=cytochrome c oxidase subunit III;protein_id=YP_010139282.1;transl_except=(pos:5429..5429%2Caa:TERM);transl_table=5
+NC_056909.1	RefSeq	gene	5430	5491	.	+	.	ID=gene-KYW23_mgt10;Dbxref=GeneID:67132817;Name=KYW23_mgt10;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt10
+NC_056909.1	RefSeq	tRNA	5430	5491	.	+	.	ID=rna-KYW23_mgt10;Parent=gene-KYW23_mgt10;Dbxref=GeneID:67132817;gbkey=tRNA;locus_tag=KYW23_mgt10;product=tRNA-Gly
+NC_056909.1	RefSeq	exon	5430	5491	.	+	.	ID=exon-KYW23_mgt10-1;Parent=rna-KYW23_mgt10;Dbxref=GeneID:67132817;gbkey=tRNA;locus_tag=KYW23_mgt10;product=tRNA-Gly
+NC_056909.1	RefSeq	gene	5492	5836	.	+	.	ID=gene-KYW23_mgp07;Dbxref=GeneID:67132834;Name=ND3;gbkey=Gene;gene=ND3;gene_biotype=protein_coding;locus_tag=KYW23_mgp07
+NC_056909.1	RefSeq	CDS	5492	5836	.	+	0	ID=cds-YP_010139283.1;Parent=gene-KYW23_mgp07;Dbxref=GenBank:YP_010139283.1,GeneID:67132834;Name=YP_010139283.1;gbkey=CDS;gene=ND3;locus_tag=KYW23_mgp07;product=NADH dehydrogenase subunit 3;protein_id=YP_010139283.1;transl_table=5
+NC_056909.1	RefSeq	gene	5835	5898	.	+	.	ID=gene-KYW23_mgt11;Dbxref=GeneID:67132818;Name=KYW23_mgt11;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt11
+NC_056909.1	RefSeq	tRNA	5835	5898	.	+	.	ID=rna-KYW23_mgt11;Parent=gene-KYW23_mgt11;Dbxref=GeneID:67132818;gbkey=tRNA;locus_tag=KYW23_mgt11;product=tRNA-Ala
+NC_056909.1	RefSeq	exon	5835	5898	.	+	.	ID=exon-KYW23_mgt11-1;Parent=rna-KYW23_mgt11;Dbxref=GeneID:67132818;gbkey=tRNA;locus_tag=KYW23_mgt11;product=tRNA-Ala
+NC_056909.1	RefSeq	gene	5898	5958	.	+	.	ID=gene-KYW23_mgt12;Dbxref=GeneID:67132835;Name=KYW23_mgt12;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt12
+NC_056909.1	RefSeq	tRNA	5898	5958	.	+	.	ID=rna-KYW23_mgt12;Parent=gene-KYW23_mgt12;Dbxref=GeneID:67132835;gbkey=tRNA;locus_tag=KYW23_mgt12;product=tRNA-Arg
+NC_056909.1	RefSeq	exon	5898	5958	.	+	.	ID=exon-KYW23_mgt12-1;Parent=rna-KYW23_mgt12;Dbxref=GeneID:67132835;gbkey=tRNA;locus_tag=KYW23_mgt12;product=tRNA-Arg
+NC_056909.1	RefSeq	gene	5957	6020	.	+	.	ID=gene-KYW23_mgt13;Dbxref=GeneID:67132836;Name=KYW23_mgt13;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt13
+NC_056909.1	RefSeq	tRNA	5957	6020	.	+	.	ID=rna-KYW23_mgt13;Parent=gene-KYW23_mgt13;Dbxref=GeneID:67132836;gbkey=tRNA;locus_tag=KYW23_mgt13;product=tRNA-Asn
+NC_056909.1	RefSeq	exon	5957	6020	.	+	.	ID=exon-KYW23_mgt13-1;Parent=rna-KYW23_mgt13;Dbxref=GeneID:67132836;gbkey=tRNA;locus_tag=KYW23_mgt13;product=tRNA-Asn
+NC_056909.1	RefSeq	gene	6019	6085	.	+	.	ID=gene-KYW23_mgt14;Dbxref=GeneID:67132837;Name=KYW23_mgt14;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt14
+NC_056909.1	RefSeq	tRNA	6019	6085	.	+	.	ID=rna-KYW23_mgt14;Parent=gene-KYW23_mgt14;Dbxref=GeneID:67132837;gbkey=tRNA;locus_tag=KYW23_mgt14;product=tRNA-Ser
+NC_056909.1	RefSeq	exon	6019	6085	.	+	.	ID=exon-KYW23_mgt14-1;Parent=rna-KYW23_mgt14;Dbxref=GeneID:67132837;gbkey=tRNA;locus_tag=KYW23_mgt14;product=tRNA-Ser
+NC_056909.1	RefSeq	gene	6087	6150	.	+	.	ID=gene-KYW23_mgt15;Dbxref=GeneID:67132838;Name=KYW23_mgt15;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt15
+NC_056909.1	RefSeq	tRNA	6087	6150	.	+	.	ID=rna-KYW23_mgt15;Parent=gene-KYW23_mgt15;Dbxref=GeneID:67132838;gbkey=tRNA;locus_tag=KYW23_mgt15;product=tRNA-Glu
+NC_056909.1	RefSeq	exon	6087	6150	.	+	.	ID=exon-KYW23_mgt15-1;Parent=rna-KYW23_mgt15;Dbxref=GeneID:67132838;gbkey=tRNA;locus_tag=KYW23_mgt15;product=tRNA-Glu
+NC_056909.1	RefSeq	gene	6152	6215	.	-	.	ID=gene-KYW23_mgt16;Dbxref=GeneID:67132839;Name=KYW23_mgt16;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt16
+NC_056909.1	RefSeq	tRNA	6152	6215	.	-	.	ID=rna-KYW23_mgt16;Parent=gene-KYW23_mgt16;Dbxref=GeneID:67132839;gbkey=tRNA;locus_tag=KYW23_mgt16;product=tRNA-Phe
+NC_056909.1	RefSeq	exon	6152	6215	.	-	.	ID=exon-KYW23_mgt16-1;Parent=rna-KYW23_mgt16;Dbxref=GeneID:67132839;gbkey=tRNA;locus_tag=KYW23_mgt16;product=tRNA-Phe
+NC_056909.1	RefSeq	gene	6216	7917	.	-	.	ID=gene-KYW23_mgp06;Dbxref=GeneID:67132840;Name=ND5;gbkey=Gene;gene=ND5;gene_biotype=protein_coding;locus_tag=KYW23_mgp06
+NC_056909.1	RefSeq	CDS	6216	7917	.	-	0	ID=cds-YP_010139284.1;Parent=gene-KYW23_mgp06;Dbxref=GenBank:YP_010139284.1,GeneID:67132840;Name=YP_010139284.1;Note=TAA stop codon is completed by the addition of 3' A residues to the mRNA;gbkey=CDS;gene=ND5;locus_tag=KYW23_mgp06;product=NADH dehydrogenase subunit 5;protein_id=YP_010139284.1;transl_except=(pos:complement(6216..6216)%2Caa:TERM);transl_table=5
+NC_056909.1	RefSeq	gene	7918	7979	.	-	.	ID=gene-KYW23_mgt17;Dbxref=GeneID:67132819;Name=KYW23_mgt17;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt17
+NC_056909.1	RefSeq	tRNA	7918	7979	.	-	.	ID=rna-KYW23_mgt17;Parent=gene-KYW23_mgt17;Dbxref=GeneID:67132819;gbkey=tRNA;locus_tag=KYW23_mgt17;product=tRNA-His
+NC_056909.1	RefSeq	exon	7918	7979	.	-	.	ID=exon-KYW23_mgt17-1;Parent=rna-KYW23_mgt17;Dbxref=GeneID:67132819;gbkey=tRNA;locus_tag=KYW23_mgt17;product=tRNA-His
+NC_056909.1	RefSeq	gene	7980	9341	.	-	.	ID=gene-KYW23_mgp05;Dbxref=GeneID:67132841;Name=ND4;gbkey=Gene;gene=ND4;gene_biotype=protein_coding;locus_tag=KYW23_mgp05
+NC_056909.1	RefSeq	CDS	7980	9341	.	-	0	ID=cds-YP_010139285.1;Parent=gene-KYW23_mgp05;Dbxref=GenBank:YP_010139285.1,GeneID:67132841;Name=YP_010139285.1;gbkey=CDS;gene=ND4;locus_tag=KYW23_mgp05;product=NADH dehydrogenase subunit 4;protein_id=YP_010139285.1;transl_table=5
+NC_056909.1	RefSeq	gene	9341	9619	.	-	.	ID=gene-KYW23_mgp04;Dbxref=GeneID:67132820;Name=ND4L;gbkey=Gene;gene=ND4L;gene_biotype=protein_coding;locus_tag=KYW23_mgp04
+NC_056909.1	RefSeq	CDS	9341	9619	.	-	0	ID=cds-YP_010139286.1;Parent=gene-KYW23_mgp04;Dbxref=GenBank:YP_010139286.1,GeneID:67132820;Name=YP_010139286.1;gbkey=CDS;gene=ND4L;locus_tag=KYW23_mgp04;product=NADH dehydrogenase subunit 4L;protein_id=YP_010139286.1;transl_table=5
+NC_056909.1	RefSeq	gene	9622	9683	.	+	.	ID=gene-KYW23_mgt18;Dbxref=GeneID:67132821;Name=KYW23_mgt18;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt18
+NC_056909.1	RefSeq	tRNA	9622	9683	.	+	.	ID=rna-KYW23_mgt18;Parent=gene-KYW23_mgt18;Dbxref=GeneID:67132821;gbkey=tRNA;locus_tag=KYW23_mgt18;product=tRNA-Thr
+NC_056909.1	RefSeq	exon	9622	9683	.	+	.	ID=exon-KYW23_mgt18-1;Parent=rna-KYW23_mgt18;Dbxref=GeneID:67132821;gbkey=tRNA;locus_tag=KYW23_mgt18;product=tRNA-Thr
+NC_056909.1	RefSeq	gene	9684	9744	.	-	.	ID=gene-KYW23_mgt19;Dbxref=GeneID:67132842;Name=KYW23_mgt19;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt19
+NC_056909.1	RefSeq	tRNA	9684	9744	.	-	.	ID=rna-KYW23_mgt19;Parent=gene-KYW23_mgt19;Dbxref=GeneID:67132842;gbkey=tRNA;locus_tag=KYW23_mgt19;product=tRNA-Pro
+NC_056909.1	RefSeq	exon	9684	9744	.	-	.	ID=exon-KYW23_mgt19-1;Parent=rna-KYW23_mgt19;Dbxref=GeneID:67132842;gbkey=tRNA;locus_tag=KYW23_mgt19;product=tRNA-Pro
+NC_056909.1	RefSeq	gene	9750	10238	.	+	.	ID=gene-KYW23_mgp03;Dbxref=GeneID:67132843;Name=ND6;gbkey=Gene;gene=ND6;gene_biotype=protein_coding;locus_tag=KYW23_mgp03
+NC_056909.1	RefSeq	CDS	9750	10238	.	+	0	ID=cds-YP_010139287.1;Parent=gene-KYW23_mgp03;Dbxref=GenBank:YP_010139287.1,GeneID:67132843;Name=YP_010139287.1;gbkey=CDS;gene=ND6;locus_tag=KYW23_mgp03;product=NADH dehydrogenase subunit 6;protein_id=YP_010139287.1;transl_table=5
+NC_056909.1	RefSeq	gene	10238	11371	.	+	.	ID=gene-KYW23_mgp02;Dbxref=GeneID:67132822;Name=CYTB;gbkey=Gene;gene=CYTB;gene_biotype=protein_coding;locus_tag=KYW23_mgp02
+NC_056909.1	RefSeq	CDS	10238	11371	.	+	0	ID=cds-YP_010139288.1;Parent=gene-KYW23_mgp02;Dbxref=GenBank:YP_010139288.1,GeneID:67132822;Name=YP_010139288.1;gbkey=CDS;gene=CYTB;locus_tag=KYW23_mgp02;product=cytochrome b;protein_id=YP_010139288.1;transl_table=5
+NC_056909.1	RefSeq	gene	11371	11441	.	+	.	ID=gene-KYW23_mgt20;Dbxref=GeneID:67132823;Name=KYW23_mgt20;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt20
+NC_056909.1	RefSeq	tRNA	11371	11441	.	+	.	ID=rna-KYW23_mgt20;Parent=gene-KYW23_mgt20;Dbxref=GeneID:67132823;gbkey=tRNA;locus_tag=KYW23_mgt20;product=tRNA-Ser
+NC_056909.1	RefSeq	exon	11371	11441	.	+	.	ID=exon-KYW23_mgt20-1;Parent=rna-KYW23_mgt20;Dbxref=GeneID:67132823;gbkey=tRNA;locus_tag=KYW23_mgt20;product=tRNA-Ser
+NC_056909.1	RefSeq	gene	12034	12975	.	-	.	ID=gene-KYW23_mgp01;Dbxref=GeneID:67132844;Name=ND1;gbkey=Gene;gene=ND1;gene_biotype=protein_coding;locus_tag=KYW23_mgp01
+NC_056909.1	RefSeq	CDS	12034	12975	.	-	0	ID=cds-YP_010139289.1;Parent=gene-KYW23_mgp01;Dbxref=GenBank:YP_010139289.1,GeneID:67132844;Name=YP_010139289.1;gbkey=CDS;gene=ND1;locus_tag=KYW23_mgp01;product=NADH dehydrogenase subunit 1;protein_id=YP_010139289.1;transl_table=5
+NC_056909.1	RefSeq	gene	12979	13041	.	-	.	ID=gene-KYW23_mgt21;Dbxref=GeneID:67132824;Name=KYW23_mgt21;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt21
+NC_056909.1	RefSeq	tRNA	12979	13041	.	-	.	ID=rna-KYW23_mgt21;Parent=gene-KYW23_mgt21;Dbxref=GeneID:67132824;gbkey=tRNA;locus_tag=KYW23_mgt21;product=tRNA-Leu
+NC_056909.1	RefSeq	exon	12979	13041	.	-	.	ID=exon-KYW23_mgt21-1;Parent=rna-KYW23_mgt21;Dbxref=GeneID:67132824;gbkey=tRNA;locus_tag=KYW23_mgt21;product=tRNA-Leu
+NC_056909.1	RefSeq	gene	13042	14256	.	-	.	ID=gene-KYW23_mgr02;Dbxref=GeneID:67132845;Name=KYW23_mgr02;gbkey=Gene;gene_biotype=rRNA;locus_tag=KYW23_mgr02
+NC_056909.1	RefSeq	rRNA	13042	14256	.	-	.	ID=rna-KYW23_mgr02;Parent=gene-KYW23_mgr02;Dbxref=GeneID:67132845;gbkey=rRNA;locus_tag=KYW23_mgr02;product=16S ribosomal RNA
+NC_056909.1	RefSeq	exon	13042	14256	.	-	.	ID=exon-KYW23_mgr02-1;Parent=rna-KYW23_mgr02;Dbxref=GeneID:67132845;gbkey=rRNA;locus_tag=KYW23_mgr02;product=16S ribosomal RNA
+NC_056909.1	RefSeq	gene	14257	14319	.	-	.	ID=gene-KYW23_mgt22;Dbxref=GeneID:67132846;Name=KYW23_mgt22;gbkey=Gene;gene_biotype=tRNA;locus_tag=KYW23_mgt22
+NC_056909.1	RefSeq	tRNA	14257	14319	.	-	.	ID=rna-KYW23_mgt22;Parent=gene-KYW23_mgt22;Dbxref=GeneID:67132846;gbkey=tRNA;locus_tag=KYW23_mgt22;product=tRNA-Val
+NC_056909.1	RefSeq	exon	14257	14319	.	-	.	ID=exon-KYW23_mgt22-1;Parent=rna-KYW23_mgt22;Dbxref=GeneID:67132846;gbkey=tRNA;locus_tag=KYW23_mgt22;product=tRNA-Val
+NC_056909.1	RefSeq	gene	14316	15011	.	-	.	ID=gene-KYW23_mgr01;Dbxref=GeneID:67132847;Name=KYW23_mgr01;gbkey=Gene;gene_biotype=rRNA;locus_tag=KYW23_mgr01
+NC_056909.1	RefSeq	rRNA	14316	15011	.	-	.	ID=rna-KYW23_mgr01;Parent=gene-KYW23_mgr01;Dbxref=GeneID:67132847;gbkey=rRNA;locus_tag=KYW23_mgr01;product=12S ribosomal RNA
+NC_056909.1	RefSeq	exon	14316	15011	.	-	.	ID=exon-KYW23_mgr01-1;Parent=rna-KYW23_mgr01;Dbxref=GeneID:67132847;gbkey=rRNA;locus_tag=KYW23_mgr01;product=12S ribosomal RNA
+NC_056909.1	RefSeq	sequence_feature	15012	15485	.	+	.	ID=id-NC_056909.1:15012..15485;Note=putuative A+T rich region%3B control region;gbkey=misc_feature
+

@@ -1,0 +1,11 @@
+# cox2_ppa Length: 227
+# cox2_ppa Number of predicted TMHs:  2
+# cox2_ppa Exp number of AAs in TMHs: 47.53538
+# cox2_ppa Exp number, first 60 AAs:  22.0922
+# cox2_ppa Total prob of N-in:        0.45999
+# cox2_ppa POSSIBLE N-term signal sequence
+cox2_ppa	TMHMM2.0	inside	     1    25
+cox2_ppa	TMHMM2.0	TMhelix	    26    48
+cox2_ppa	TMHMM2.0	outside	    49    62
+cox2_ppa	TMHMM2.0	TMhelix	    63    85
+cox2_ppa	TMHMM2.0	inside	    86   227
