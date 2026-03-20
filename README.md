@@ -122,7 +122,7 @@ EZmito2 provides an automated installation script that sets up everything for yo
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/ezmito.git
-cd ezmito
+cd EZmito
 
 # Run the installer
 bash install.sh
@@ -140,10 +140,10 @@ If you prefer to install manually:
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/ezmito.git
-cd ezmito
+cd EZmito
 
 # Make files executable
-chmod 775 ezmito.yml
+chmod 775 ezmito_env.yml
 chmod 775 ezmito.py
 
 # Create conda environment
