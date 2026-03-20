@@ -1,9 +1,10 @@
+<div align="center">
+  
 # EZmito2 🧬
 
-<div align="center">
 
 ![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![License](https://img.shields.io/badge/license-GPL--v3-blue.svg)
 ![Bioinformatics](https://img.shields.io/badge/field-Bioinformatics-purple.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 
@@ -12,6 +13,10 @@
 [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Web Server](#-web-server) • [Citation](#-citation)
 
 </div>
+
+<p align="center">
+  <img src="assets/GA.png" width="800"/>
+</p>
 
 ---
 
