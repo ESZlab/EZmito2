@@ -3,23 +3,25 @@ channels:
   - conda-forge
   - bioconda
   - defaults
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
   - alsa-lib=1.2.15.3=hb03c661_0
   - asttokens=3.0.1=pyhd8ed1ab_0
+  - backports.zstd=1.3.0=py311h6b1f9c4_0
   - bedtools=2.31.1=h13024bc_3
   - biopython=1.86=py311h49ec1c0_0
   - blast=2.17.0=h66d330f_0
   - blinker=1.9.0=py311h06a4308_1
   - brotli=1.2.0=hed03a55_1
   - brotli-bin=1.2.0=hb03c661_1
+  - brotli-python=1.2.0=py311h66f275b_1
   - bzip2=1.0.8=hda65f42_8
   - c-ares=1.34.6=hb03c661_0
-  - ca-certificates=2025.12.2=h06a4308_0
+  - ca-certificates=2026.2.25=hbd8a1cb_0
   - cairo=1.18.4=he90730b_1
+  - certifi=2026.2.25=pyhd8ed1ab_0
+  - charset-normalizer=3.4.6=pyhd8ed1ab_0
   - click=8.2.1=py311h06a4308_1
   - comm=0.2.3=pyhe01879c_0
   - contourpy=1.3.3=py311hdf67eae_3
@@ -43,15 +45,20 @@ dependencies:
   - fonttools=4.61.1=py311h3778330_0
   - freetype=2.14.1=ha770c72_0
   - graphite2=1.3.14=hecca717_2
+  - gunicorn=25.1.0=py311h38be061_0
+  - h2=4.3.0=pyhcf101f3_0
   - harfbuzz=12.3.0=h6083320_0
+  - hpack=4.1.0=pyhd8ed1ab_0
+  - hyperframe=6.1.0=pyhd8ed1ab_0
   - icu=78.2=h33c6efd_0
+  - idna=3.11=pyhd8ed1ab_0
   - ipykernel=7.1.0=pyha191276_0
   - ipython=9.9.0=pyh53cf698_0
   - ipython_pygments_lexers=1.1.1=pyhd8ed1ab_0
   - itsdangerous=2.2.0=py311h06a4308_0
   - jedi=0.19.2=pyhd8ed1ab_1
   - jinja2=3.1.6=py311h06a4308_0
-  - joblib=1.5.3=py311h06a4308_0
+  - joblib=1.5.3=pyhd8ed1ab_0
   - jupyter_client=8.8.0=pyhcf101f3_0
   - jupyter_core=5.9.1=pyhc90fa1f_0
   - keyutils=1.6.3=hb9d3cd8_0
@@ -118,24 +125,24 @@ dependencies:
   - libxml2-16=2.15.1=hca6bf5a_1
   - libxslt=1.1.43=h711ed8c_1
   - libzlib=1.3.1=hb9d3cd8_2
-  - mafft=7.475=h779adbc_1
+  - mafft=7.505=hec16e2b_0
   - markupsafe=3.0.2=py311h5eee18b_0
   - matplotlib=3.10.8=py311h38be061_0
   - matplotlib-base=3.10.8=py311h0f3be63_0
   - matplotlib-inline=0.2.1=pyhd8ed1ab_0
   - munkres=1.0.7=py_1
-  - narwhals=2.7.0=py311h06a4308_0
+  - narwhals=2.17.0=pyhcf101f3_0
   - ncbi-vdb=3.3.0=h9948957_0
   - ncurses=6.5=h2d0b736_3
   - nest-asyncio=1.6.0=pyhd8ed1ab_1
   - numpy=2.4.1=py311h2e04523_0
   - openjpeg=2.5.4=h55fea9a_0
   - openldap=2.6.10=he970967_0
-  - openssl=3.5.5=h1b28b03_0
+  - openssl=3.6.1=h35e630c_1
   - packaging=25.0=pyh29332c3_1
   - pandas=2.3.3=py311hed34c8f_2
   - parso=0.8.5=pyhcf101f3_0
-  - patsy=1.0.2=py311h06a4308_0
+  - patsy=1.0.2=pyhcf101f3_0
   - pcre2=10.47=haa7fec5_0
   - perl=5.26.2=h14c3975_0
   - perl-archive-tar=2.32=pl526_0
@@ -157,7 +164,7 @@ dependencies:
   - pip=25.3=pyh8b19718_0
   - pixman=0.46.4=h54a6638_1
   - platformdirs=4.5.1=pyhcf101f3_0
-  - plotly=6.5.0=py311h7040dfc_0
+  - plotly=6.6.0=pyhd8ed1ab_0
   - prompt-toolkit=3.0.52=pyha770c72_0
   - psutil=7.2.1=py311haee01d2_0
   - pthread-stubs=0.4=hb9d3cd8_1002
@@ -169,6 +176,7 @@ dependencies:
   - pyparsing=3.3.1=pyhcf101f3_0
   - pysam=0.23.3=py311hb456a96_1
   - pyside6=6.10.1=py311he4c1a5a_0
+  - pysocks=1.7.1=pyha55dd90_7
   - python=3.11.14=hd63d673_2_cpython
   - python-dateutil=2.9.0.post0=pyhe01879c_2
   - python-tzdata=2025.3=pyhd8ed1ab_0
@@ -178,19 +186,21 @@ dependencies:
   - qhull=2020.2=h434a139_5
   - qt6-main=6.10.1=hb82b983_4
   - readline=8.3=h853b02a_0
-  - scikit-learn=1.8.0=py311h86c3e14_0
+  - requests=2.32.5=pyhcf101f3_1
+  - scikit-learn=1.8.0=np2py311ha15b03d_1
   - scipy=1.17.0=py311hbe70eeb_1
   - setuptools=80.9.0=pyhff2d567_0
   - six=1.17.0=pyhe01879c_1
   - stack_data=0.6.3=pyhd8ed1ab_1
-  - statsmodels=0.14.6=py311h47b2149_0
-  - threadpoolctl=3.5.0=py311h7040dfc_1
+  - statsmodels=0.14.6=py311h0372a8f_0
+  - threadpoolctl=3.6.0=pyhecae5ae_0
   - tk=8.6.13=noxft_ha0e22de_103
   - tornado=6.5.4=py311h41d9c34_0
   - traitlets=5.14.3=pyhd8ed1ab_1
   - typing_extensions=4.15.0=pyhcf101f3_0
   - tzdata=2025c=hc9c84f9_1
   - unicodedata2=17.0.0=py311h49ec1c0_1
+  - urllib3=2.6.3=pyhd8ed1ab_0
   - wayland=1.24.0=hd6090a7_1
   - wcwidth=0.2.14=pyhd8ed1ab_0
   - werkzeug=3.1.3=py311h06a4308_0
@@ -224,16 +234,21 @@ dependencies:
   - zstd=1.5.7=hb78ec9c_6
   - pip:
       - bcbio-gff==0.7.1
+      - cachelib==0.13.0
       - cai2==1.0.5
-      - choreographer==1.2.1
-      - iniconfig==2.3.0
+      - cloudpickle==3.1.2
+      - dask==2026.3.0
+      - flask-caching==2.3.1
+      - fsspec==2026.4.0
+      - importlib-metadata==9.0.0
       - itaxotools-pygblocks==0.1.0
       - kaleido==0.2.1
-      - logistro==2.0.1
-      - orjson==3.11.7
-      - pluggy==1.6.0
+      - locket==1.0.0
+      - networkx==3.6.1
+      - partd==1.4.2
       - pycirclize==1.10.1
-      - pytest==9.0.2
-      - pytest-timeout==2.4.0
-      - simplejson==3.20.2
-prefix: /home/cc/miniconda3/envs/ezmito_env
+      - pyyaml==6.0.3
+      - scikit-allel==1.3.13
+      - toolz==1.1.0
+      - zipp==4.1.0
+prefix: /home/labadmin/miniconda3/envs/ezmito_env
