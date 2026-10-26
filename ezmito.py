@@ -929,116 +929,112 @@ def ez_circular_subcommand(args):
 	import re
 
 	annotation_path = args.bed	  # accepts BED or GFF3
-	fasta_file  = args.input
-	output_fasta = os.path.join(args.outdir, 'output.fasta')
-	output_bed   = os.path.join(args.outdir, 'output.bed')
-	gene_name	= args.start
-	linear	   = '' if args.feature == 'circular' else 'linear'
+	fasta_file   = args.input
+	outdir       = args.outdir
+	output_fasta = os.path.join(outdir, 'output.fasta')
+	output_bed   = os.path.join(outdir, 'output.bed')
+	gene_name    = args.start
+	linear       = args.feature.lower() == 'linear'
 
-	os.makedirs(args.outdir, exist_ok=True)
-	with _ToolRun("EZcircular", args.outdir, args) as R:
+	BED_COLUMNS = ["chrom", "start", "end", "name", "score", "strand"]
+
+	# ── Helper functions ────────────────────────────────────────────────────
+
+	def make_linear_spacer(fasta_file, bed_file, workdir):
+		"""Append a 100-N spacer to the end of a linear genome so that the
+		original start/end junction remains visible after rotation."""
+		record = next(SeqIO.parse(fasta_file, 'fasta'))
+		seq_len = len(record.seq)
+		record.seq = record.seq + 'N' * 100
+		new_fasta = os.path.join(workdir, 'tmp_linear.fa')
+		SeqIO.write(record, new_fasta, 'fasta')
+
+		bed_df = pd.read_csv(bed_file, sep='\t', header=None, names=BED_COLUMNS)
+		bed_df.loc[len(bed_df.index)] = [bed_df['chrom'].iloc[0], seq_len, seq_len + 100,
+			'EZcircular_linearization_spacer', '.', '.']
+		new_bed = os.path.join(workdir, 'tmp_linear.bed')
+		bed_df.to_csv(new_bed, index=False, header=None, sep='\t')
+		return new_fasta, new_bed
+
+	def parse_bed(bed_file, gene_name):
+		"""Return (start, end) of the requested gene. Exact (case-insensitive)
+		name match is preferred; substring match is used as a fallback."""
+		bedtool = list(pybedtools.BedTool(bed_file))
+		target = gene_name.lower()
+		exact = [iv for iv in bedtool if iv.name.lower() == target]
+		hits = exact or [iv for iv in bedtool if target in iv.name.lower()]
+		if not hits:
+			raise ValueError(f"Starting gene '{gene_name}' not found in BED file: {bed_file}")
+		if len(hits) > 1 and not exact:
+			print(f"Warning: '{gene_name}' matched several features "
+				  f"({', '.join(h.name for h in hits)}); using the first one: {hits[0].name}")
+		return int(hits[0].start), int(hits[0].end)
+
+	def reorder_and_write_fasta(gene_start, fasta_file, output_fasta, gene_name):
+		record = next(SeqIO.parse(fasta_file, 'fasta'))
+		new_id = record.id + '_arranged_from_' + gene_name
+		rotated = SeqRecord(record.seq[gene_start:] + record.seq[:gene_start],
+							id=new_id, description='')
+		SeqIO.write(rotated, output_fasta, 'fasta')
+		return new_id, len(record.seq)
+
+	def write_bed(bed_file, output_bed, gene_start, seq_len, new_id):
+		bed_df = pd.read_csv(bed_file, sep='\t', header=None, names=BED_COLUMNS)
+		bed_df = bed_df.sort_values(['start', 'end']).reset_index(drop=True)
+		first = bed_df[bed_df['start'] >= gene_start].copy()
+		first[['start', 'end']] -= gene_start
+		second = bed_df[bed_df['start'] < gene_start].copy()
+		second[['start', 'end']] += seq_len - gene_start
+		out = pd.concat([first, second])
+		out['chrom'] = new_id
+		out.to_csv(output_bed, sep='\t', index=False, header=None)
+
+	# ── Main analysis ───────────────────────────────────────────────────────
+	create_output_dir(outdir)
+
+	with _ToolRun("EZcircular", outdir, args) as R:
 		banner = pyfiglet.figlet_format("EZcircular\n\n")
 		R.write(banner.rstrip())
 		R.write("\n\nStarting EZcircular run")
 		R.write(f"Input FASTA  : {fasta_file}")
 		R.write(f"Annotation   : {annotation_path}")
-		R.write(f"Feature	  : {'circular' if not linear else 'linear'}")
+		R.write(f"Feature      : {'linear' if linear else 'circular'}")
 		R.write(f"Starting gene: {gene_name}")
-		R.write(f"Outdir	   : {args.outdir}")
+		R.write(f"Outdir       : {outdir}")
 		R.write()
-		print(banner.rstrip())
-		print(f"Starting gene: {gene_name}  |  Outdir: {args.outdir}")
 
-		# ── Auto-detect and convert annotation format (BED or GFF3) ──────────
+		is_fasta(fasta_file)
+
+		# Auto-detect and convert annotation format (BED or GFF3)
 		detected_fmt = detect_annotation_format(annotation_path)
 		R.write(f"Detected annotation format: {detected_fmt.upper()}")
-		bed_file, was_converted = ensure_bed(annotation_path, args.outdir)
+		bed_file, was_converted = ensure_bed(annotation_path, outdir)
 		if was_converted:
 			R.write(f"GFF3 input converted to BED: {bed_file}")
-			print(f"GFF3 input detected — converted to BED automatically.")
 
-	def make_circular(fasta_file, bed_file):
-		# Modify the FASTA file
-		with open(fasta_file + '_linear.fa', 'w') as circularized:
-			for record in SeqIO.parse(fasta_file, 'fasta'):
-				seq_len = len(record.seq)
-				record.seq = record.seq + 'N' * 100
-				SeqIO.write(record, circularized, 'fasta')
-				break
+		# Remove parenthesised suffixes, e.g. trnL(uur) → trnL
+		gene_name = re.sub(r'\([^)]*\)', '', gene_name).strip()
 
-		# Modify the BED file
-		columns = ["chrom", "start", "end", "name", "score", "strand"]
-		bed_df = pd.read_csv(bed_file, sep='\t', header=None, names=columns)
-		bed_df.loc[len(bed_df.index)] = [bed_df['chrom'][0], seq_len, seq_len + 100, 
-			'### Artifact of circularization of EZcircularize ###', '', '']
-		bed_df.to_csv(bed_file + '_linear.bed', index=False, header=None, sep='\t')
-		return fasta_file + '_linear.fa', bed_file + '_linear.bed'
-	
-	def parse_bed(bed_file, gene_name):
-		try:
-			bedtool = pybedtools.BedTool(bed_file)
-			interval = bedtool.filter(lambda x: gene_name.lower() in x.name.lower())[0]
-			return int(interval.start), int(interval.end)
-		except Exception as e:
-			print(f"Error parsing BED file: {e}")
-			return None
+		work_fasta, work_bed = fasta_file, bed_file
+		if linear:
+			work_fasta, work_bed = make_linear_spacer(fasta_file, bed_file, outdir)
+			R.write("Linear genome: 100-N spacer added at the original junction")
 
-	def reorder_and_write_fasta(gene_coordinates, fasta_file, output_fasta, gene_name):
-		# Ensure output directory exists
-		replace_dir(os.path.dirname(output_fasta))
-		
-		if gene_coordinates is None:
-			print(f"Error: Unable to extract coordinates for gene {gene_name} from BED.")
-		else:
-			gene_start, gene_end = gene_coordinates
-			gene_record = SeqRecord(Seq(""), id="", description="")
-			for record in SeqIO.parse(fasta_file, "fasta"):
-				gene_record.seq += record.seq[gene_start:]  # Adjust coordinates to 0-based index
-				gene_record.seq += record.seq[:gene_start]
-				gene_record.id = record.id + '_arranged_from_' + gene_name
-			with open(output_fasta, "w") as output_handle:
-				SeqIO.write(gene_record, output_handle, "fasta")
-		return gene_record.id
+		gene_start, gene_end = parse_bed(work_bed, gene_name)
+		R.write(f"'{gene_name}' found at {gene_start + 1}-{gene_end} (1-based)")
 
+		new_id, seq_len = reorder_and_write_fasta(gene_start, work_fasta, output_fasta, gene_name)
+		write_bed(work_bed, output_bed, gene_start, seq_len, new_id)
+		R.write(f"Rotated FASTA saved: {output_fasta}")
+		R.write(f"Rotated BED saved  : {output_bed}")
 
-	
-	def write_bed(bed_file, output_bed, gene_coordinates, gene_record_id):
-		columns = ["chrom", "start", "end", "name", "score", "strand"]
-		bed_df = pd.read_csv(bed_file, sep='\t', header=None, names=columns)
-		length_seq = len(next(SeqIO.parse(fasta_file, "fasta")).seq)
-		bed_df_first = bed_df[bed_df["start"] >= gene_coordinates[0]].copy()
-		bed_df_first["start"] -= gene_coordinates[0]
-		bed_df_first["end"] -= gene_coordinates[0]
-		bed_df_second = bed_df[bed_df["start"] < gene_coordinates[0]].copy()
-		to_add = length_seq - int(bed_df['end'].iloc[-1]) + bed_df_first['end'].iloc[-1]
-		bed_df_second["start"] += to_add
-		bed_df_second["end"] += to_add
-		bed_df_ordered = pd.concat([bed_df_first, bed_df_second])
-		bed_df_ordered["chrom"] = gene_record_id
-		bed_df_ordered.to_csv(output_bed, sep='\t', index=False, header=None)
-
-		# Remove parentheses from gene name if present
-		if '(' in gene_name or ')' in gene_name:
-			gene_name = re.sub(r'\([^)]*\)', '', gene_name)
-
-		# Apply circularization if needed
-		if linear == 'linear':
-			fasta_file, bed_file = make_circular(fasta_file, bed_file)
-
-		# Parse the BED file and reorder sequences
-		gene_coordinates = parse_bed(bed_file, gene_name)
-		gene_record_id = reorder_and_write_fasta(gene_coordinates, fasta_file, output_fasta, gene_name)
-		write_bed(bed_file, output_bed, gene_coordinates, gene_record_id)
-
-		# Cleanup temporary files if created
-		if linear == 'linear':
-			os.remove(fasta_file)
-			os.remove(bed_file)
+		if linear:
+			os.remove(work_fasta)
+			os.remove(work_bed)
+		pybedtools.cleanup()
 
 		R.write("EZcircular completed successfully.")
-		warnings.resetwarnings()
 
-	
 
 def ez_codon_subcommand(args):
 
